@@ -1,0 +1,100 @@
+site_name: CORDEX Experiment Design
+site_url: https://wcrp-cordex.github.io/experiment-design
+repo_url: https://github.com/WCRP-CORDEX/experiment-design
+repo_name: WCRP-CORDEX/experiment-design
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    - toc.follow
+    #- toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.footnote.tooltips
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+      primary: "teal"
+      accent: "amber"
+    - scheme: slate 
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode    
+      primary: "teal"
+      accent: "amber"
+  logo: assets/images/CORDEX_RGB_logo_negative.png
+  favicon: assets/images/favicon.png
+
+plugins:
+  - search
+#  - exporter:
+#      plugins:
+#        - pdf:
+#            document_title: CORDEX Experiment Design
+#            author: WCRP-CORDEX
+#            cover_title: CORDEX Experiment Design
+#            cover_subtitle: CMIP6 & CMIP7 Specifications
+#            toc_title: Table of Contents
+#            cover_logo: docs/assets/images/logo.png
+#            output_path: cordex-experiment-design.pdf
+#            debug_html: true
+#            plugins:
+  - exporter:
+      formats:
+        pdf:
+          explicit: true
+      buttons:
+        - title: Download as PDF
+          icon: material-file-download-outline
+          enabled: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.enabled
+          attributes: !!python/name:mkdocs_exporter.formats.pdf.buttons.download.attributes
+
+markdown_extensions:
+  - tables
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+extra:
+  version:
+    provider: mike
+
+extra_css:
+  - assets/stylesheets/custom.css
+
+nav:
+  - CORDEX-CMIP6:
+    - Overview: CORDEX-CMIP6_index.md
+    - Dynamical Downscaling: CORDEX-CMIP6_experiment_design_DD.md
+    - Statistical Downscaling: CORDEX-CMIP6_experiment_design_ESD.md
+  - CORDEX-CMIP7:
+    - Overview: CORDEX-CMIP7_index.md
+    - Dynamical Downscaling: CORDEX-CMIP7_experiment_design_DD.md
+    #- Statistical Downscaling: CORDEX-CMIP7_experiment_design_ESD.md

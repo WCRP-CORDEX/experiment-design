@@ -1,0 +1,21 @@
+/* Custom styles */
+:root {
+  --md-primary-fg-color: #2196f3;
+  --md-primary-fg-color--light: #64b5f6;
+  --md-primary-fg-color--dark: #1976d2;
+}
+
+/* Custom heading styles */
+.md-typeset h1 {
+  color: var(--md-primary-fg-color);
+  font-weight: 700;
+}
+
+/* Custom link colors */
+.md-content a {
+  color: var(--md-primary-fg-color);
+}
+
+.md-content a:hover {
+  color: var(--md-primary-fg-color--light);
+}
