@@ -37,18 +37,6 @@ theme:
 
 plugins:
   - search
-#  - exporter:
-#      plugins:
-#        - pdf:
-#            document_title: CORDEX Experiment Design
-#            author: WCRP-CORDEX
-#            cover_title: CORDEX Experiment Design
-#            cover_subtitle: CMIP6 & CMIP7 Specifications
-#            toc_title: Table of Contents
-#            cover_logo: docs/assets/images/logo.png
-#            output_path: cordex-experiment-design.pdf
-#            debug_html: true
-#            plugins:
   - exporter:
       formats:
         pdf:
@@ -98,3 +86,6 @@ nav:
     - Overview: CORDEX-CMIP7_index.md
     - Dynamical Downscaling: CORDEX-CMIP7_experiment_design_DD.md
     #- Statistical Downscaling: CORDEX-CMIP7_experiment_design_ESD.md
+
+use_directory_urls: false
+strict: false
