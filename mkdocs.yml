@@ -87,5 +87,5 @@ nav:
     - Dynamical Downscaling: CORDEX-CMIP7_experiment_design_DD.md
     #- Statistical Downscaling: CORDEX-CMIP7_experiment_design_ESD.md
 
-use_directory_urls: false
+use_directory_urls: true
 strict: false

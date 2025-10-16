@@ -4,38 +4,41 @@ pdf: true
 
 # CORDEX experiment design for dynamical downscaling of CMIP6
 
-**18 May 2021**
+**28 Apr 2025**
+DOI: [10.5281/zenodo.15268192](https://doi.org/10.5281/zenodo.15268192)
 
 The COordinated Regional climate Downscaling EXperiment ([CORDEX](http://cordex.org)) was implemented under the auspices of the World Climate Research Program ([WCRP](http://www.wcrp-climate.org)).
 Its aim is to improve downscaling techniques and their use in understanding and assessing regional climate change.
 It also provides robust regional climate information for application in vulnerability, impacts, and adaptation (VIA) studies.
-The CORDEX activity based on the downscaling of global projections from the fifth phase of the Climate Model Intercomparison Project ([CMIP5](http://www.wcrp-climate.org/wgcm-cmip/wgcm-cmip5)) has been ongoing since 2010 ([CORDEX experiment design for dynamical downscaling of CMIP5](https://cordex.org/wp-content/uploads/2020/05/cordex_general_instructions.pdf)) and soon comes to its end.
+The CORDEX activity based on the downscaling of global projections from the fifth phase of the Climate Model Intercomparison Project ([CMIP5](https://wcrp-cmip.org/cmip-phases/cmip5)) has been ongoing since 2010 ([CORDEX experiment design for dynamical downscaling of CMIP5](https://doi.org/10.5281/zenodo.15199425)) and soon comes to its end.
 This experiment design document presents a simulation framework for the dynamical downscaling of global climate projections from the sixth phase of CMIP ([CMIP6](http://www.wcrp-climate.org/wgcm-cmip/wgcm-cmip6)).
-The general aim is to downscale a subset of climate scenarios from the CMIP6 ensemble of projections generated in [ScenarioMIP](http://www.cesm.ucar.edu/projects/CMIP6/ScenarioMIP/), and to make these downscaled regional scenarios publicly available.
+The general aim is to downscale a subset of climate scenarios from the CMIP6 ensemble of projections generated in [ScenarioMIP](https://wcrp-cmip.org/mips/scenariomip), and to make these downscaled regional scenarios publicly available.
 For more details see [Gutowski et al. 2016](https://www.geosci-model-dev.net/9/4087/2016/) and the [CORDEX White paper](https://cordex.org/wp-content/uploads/2021/05/The-future-of-CORDEX-MAY-17-2021-1.pdf).
 
 In addition to the continental-scale downscaling addressed in this document, CORDEX includes many other components.
-For example, [the Flagship Pilot Studies](https://cordex.org/experiment-guidelines/flagship-pilot-studies/) (FPS) and regional workshops for climate and VIA communities.
+For example, [the Flagship Pilot Studies](https://cordex.org/strategic-activities/flagship-pilot-studies) (FPS) and regional workshops for climate and VIA communities.
 CORDEX is a continuous activity that is not divided into phases (1st, 2nd, etc.) and not necessarily related to the CMIP cycles.
 The framework described in this document is simply referred to as CORDEX-CMIP6.
+Newer versions of this document may exist.
+Find the latest one at: [https://doi.org/10.5281/zenodo.15199301](https://doi.org/10.5281/zenodo.15199301).
 
 ## 1. CORDEX domains
 
 The requirement of a common domain is fundamental to coordination of activities that produce common output datasets and facilitate ease of analysis of results for given domains.
 [14 standard continental-scale CORDEX domains](http://cordex.org/domains/) have received an official CORDEX designation and include: South America, Central America, North America, Europe, Mediterranean, Middle East and North Africa, Africa, Central Asia, South Asia, East Asia, Southeast Asia, Australasia, the Arctic and Antarctica.
-The simulations have to follow the size specifications for the CORDEX domains (link to the CORDEX domain doc, to be provided when available), paying particular attention to the specified minimum domain sizes.
+The simulations have to follow the size specifications for the CORDEX domains[^1], paying particular attention to the specified minimum domain sizes.
 Notably, the CORDEX domain has to be fully inside your model domain and not include any of the boundary relaxation zones.
 It is appreciated that domains will not be identical, as for various reasons groups may choose to modify their actual domains somewhat.
 
 This experiment design addresses the 14 continental-scale CORDEX domains, which cover the majority of the populated land areas worldwide, as well as the Arctic and Antarctic.
-Currently, smaller domains may be addressed within [the Flagship Pilot Studies](https://cordex.org/experiment-guidelines/flagship-pilot-studies/) (FPS) programme.
+Currently, smaller domains may be addressed within [the Flagship Pilot Studies](https://cordex.org/strategic-activities/flagship-pilot-studies) (FPS) programme.
 
 If the regional CORDEX communities think that the configuration of their CORDEX domains is not optimal (e.g. too small, too large, etc.) they can provide a formal request to [the International Project Office for CORDEX](https://cordex.org/about/project-office/) (IPOC) to update the current configuration.
 It is also possible to apply for a new CORDEX domain (see [Criteria for Selecting and Updating CORDEX Domains](https://cordex.org/wp-content/uploads/2020/09/Domain-Criteria-Document-FINAL.pdf)).
 The request for updating a CORDEX domain has to come from [the Point-of-Contact](https://cordex.org/about/points-of-contact/) (POC) of a CORDEX domain, after a common agreement has been reached, not from individual RCM groups.
 It is recognised that any choice of a domain may not be optimal for all groups.
 
-Similar to the CORDEX experiment design for the dynamical downscaling of CMIP5, the CORDEX-Africa domain is a focus region.
+Similar to [the CORDEX experiment design for the dynamical downscaling of CMIP5](https://doi.org/10.5281/zenodo.15199425), the CORDEX-Africa domain is a focus region.
 We would therefore like to remind you to prioritize the Africa domain when selecting regions for integration beyond your ‘home domain’.
 
 ## 2. Resolution/Grid-spacing
@@ -72,7 +75,7 @@ There are many ways that variable resolution is achieved and it is up to the mod
 ## 4. Evaluation experiment
 
 All groups must first carry out an evaluation simulation driven by the ERA5 reanalysis for each domain they simulate.
-The ERA5 reanalysis covers 1979-2020 (2020 = last full year, as of May 2021), and the evaluation experiment must cover the entire 1979-2020 period, or a longer period depending on the availability of the ERA5 forcing.
+The ERA5 reanalysis covers 1979-2024 (2024 = last full year, as of April 2025), and the evaluation experiment must cover at least the 1979-2020 period, or a longer period depending on the availability of the ERA5 forcing.
 Model level or pressure level data may be used to drive RCMs.
 A one year spin-up (1979) is recommended for atmosphere-land models, but a longer spin-up (or an offline spin-up) may be required for models that include additional climate system components.
 
@@ -116,7 +119,7 @@ When possible, it is recommended that RCM groups provide two reanalysis-driven e
 
 ## 5. Historical experiment
 
-Boundary conditions from the CMIP6 historical experiment, requested by CORDEX, are available for 1950-2014 (a link to a list with GCMs that have provided boundary conditions for RCM, when available).
+Boundary conditions from the CMIP6 historical experiment, requested by CORDEX, are available for 1950-2014[^2].
 In addition to the moving 30-yr reference period (1991-2020 for the 2021-2030 decade) the World Meteorological Organisation ([WMO](https://public.wmo.int/en)) has also recommended that [1961-1990 be used as a standard static reference period](https://wmoomm.sharepoint.com/:b:/r/sites/wmocpdb/eve_activityarea/Climate%20Data%20and%20Monitoring_905e0e2b-3eb4-e911-a967-000d3a442d3c/WWR/clino/16953-2021-S-CS-CMP-CLINO9120-en.pdf?csf=1&web=1&e=cD4Ib7) for long-term climate change assessments.
 The CORDEX historical simulations have to cover at least 1960-2014 or preferably the entire 1950-2014 period.
 A one year spin-up (1950 or 1960) is recommended for atmosphere-land models but a longer spin-up (or, e.g., an offline spin-up) may be required for models that include additional climate system components.
@@ -182,9 +185,8 @@ It is up to RCM groups to decide on whether to apply large-scale spectral nudgin
 ## 7. RCM Documentation
 
 Climate model documentation, providing all necessary details on model configurations, experiments, etc., is an integral part of climate modeling activities.
-The Earth System Documentation ([ES-DOC](https://search.es-doc.org/)) is an international effort to develop tools to describe Earth system models from the CMIP5 and CMIP6 activities.
-This kind of coordinated effort is still missing in CORDEX and currently there is no common system for collecting and providing RCM details, although work in this direction is ongoing.
-Nonetheless, when possible, it is strongly recommended to create RCM documentation and errata if necessary that details all aspects of the experiments and make it publicly available.
+A coordinated effort to describe the models is still missing in CORDEX and currently there is no common system for collecting and providing RCM details, although work in this direction is ongoing.
+Nonetheless, when possible, it is strongly recommended to create RCM documentation and errata, if necessary, that details all aspects of the experiments and make it publicly available by the regional communities.
 Currently, a free format is assumed.
 
 ## 8. Selection of GCMs
@@ -196,12 +198,13 @@ It is also up to the regional CORDEX communities to decide on a minimum number o
 
 ## 9. Output variables
 
-The CORDEX Data Request (DR) details variables and frequencies to be saved and their priorities for delivery are found here (link to CORDEX DR, to be provided when available).
+The CORDEX Data Request (DR) details variables and frequencies to be saved and their priorities for delivery.
+They can be found here: [https://github.com/WCRP-CORDEX/data-request-table](https://github.com/WCRP-CORDEX/data-request-table)
 
 ## 10. Archiving and publishing specifications
 
 CORDEX output shall be published on the Earth System Grid Federation (ESGF) in order to be consistent with the CMIP6 archive and to make the output available to as many users as possible.
-All CORDEX simulations have to be formatted according to the that provide technical aspects of CORDEX data format and guidance for publishing CORDEX data on ESGF (link to CORDEX archive specs, to be provided when available).
+All CORDEX simulations have to be formatted according to the [CORDEX-CMIP6 archive specifications](https://doi.org/10.5281/zenodo.10961068) that provide technical aspects of CORDEX data format and guidance for publishing CORDEX data on ESGF.
 
 !!! warning Note
 
@@ -215,3 +218,20 @@ Meinshausen, M., Vogel, E., Nauels, A., Lorbacher, K., Meinshausen, N., Etheridg
 
 Meinshausen, M., Nicholls, Z., Lewis, J., Gidden, M. J., Vogel, E., Freund, M., Beyerle, U., Gessner, C., Nauels, A., Bauer, N., Canadell, J. G., Daniel, J. S., John, A., Krummel, P., Luderer, G., Meinshausen, N., Montzka, S. A., Rayner, P., Reimann, S., Smith, S. J., van den Berg, M., Velders, G. J. M., Vollmer, M., and Wang, H. J.: The SSP greenhouse gas concentrations and their extensions to 2500, Geosci. Model Dev. Discuss., [https://doi.org/10.5194/gmd-2019-222](https://doi.org/10.5194/gmd-2019-222), in review, 2019.
 
+## Document history
+
+### 2025-04-28
+
+ * Add missing links to the archive specifications, data request and LBC availability table.
+ * Add DOI and link to potential newer versions.
+ * Fix several broken links.
+ * Remove ES-DOC mention (not available anymore).
+ * Use new logos and WCRP document template.
+
+### 2021-05-18
+
+ * Initial version
+
+[^1]: [https://github.com/WCRP-CORDEX/domain-tables](https://github.com/WCRP-CORDEX/domain-tables)
+
+[^2]: Not all CMIP6 GCMs provide enough data to drive RCMs. This list can be checked: [https://wcrp-cordex.github.io/cmip6-for-cordex/CMIP6_for_CORDEX_availability_RCM.html](https://wcrp-cordex.github.io/cmip6-for-cordex/CMIP6_for_CORDEX_availability_RCM.html)
