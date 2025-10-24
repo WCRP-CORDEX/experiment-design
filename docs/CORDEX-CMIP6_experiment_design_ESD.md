@@ -13,30 +13,21 @@ First version, Feb 2023. Open to internal CORDEX-SAT review.
 
 Second version, Apr 2024. Open to comments from the CORDEX community.
 
-## Introduction
-
 The **COordinated Regional climate Downscaling EXperiment** ([CORDEX](http://cordex.org/)) was implemented under the auspices of the World Climate Research Program ([WCRP](http://www.wcrp-climate.org/)) in order to improve downscaling techniques and their use in the provision of robust regional climate information for application in vulnerability, impacts and adaptation (VIA) studies. Prior CORDEX activities included a validation stream aimed at assessing and improving regional climate downscaling models and techniques, along with a regional projection stream based on downscaling of global projections from the fifth phase of the Climate Model Intercomparison Project ([CMIP5](http://www.wcrp-climate.org/wgcm-cmip/wgcm-cmip5)).
-
 The experimental protocol for the regional projections was limited to dynamical downscaling (RCM), while Empirical Statistical Downscaling (ESD) projection activities were carried out in a more uncoordinated manner.
 
 This document presents an experimental framework for empirical-statistical downscaling aligned with the CORDEX-CMIP6 experimental protocol for RCMs[^1] when possible.
-
 The general aim is to downscale a subset of climate scenarios from the CMIP6 ensemble of projections generated within [the ScenarioMIP](http://www.cesm.ucar.edu/projects/CMIP6/ScenarioMIP/) activity and to make these downscaled regional scenarios publicly available ([Gutowski et al. 2016](https://www.geosci-model-dev.net/9/4087/2016/)).
-
 In order to facilitate comparability with the RCM projections, the experimental framework focuses on the CORDEX standard domains (and leaves flexibility to domains to define additional experiments depending on resources and domain-specific scientific questions).
 
 For the sake of simplicity, the framework presented here focuses on GCM-driven ESD methods and will be extended to more sophisticated hybrid approaches in future versions (in particular, to hybrid RCM-ESD approaches, including emulators).
-
 The framework consists of the following components.
     
 ## 1. CORDEX domains
 
 [14 CORDEX standard domains](http://cordex.org/domains/) have been approved and include: *South America, Central America, North America, Europe, Mediterranean, Middle East North Africa, Africa, Central Asia, South Asia, East Asia, Southeast Asia, Australasia, Arctic and Antarctica*.
-
 The simulations have to follow the size specifications for the CORDEX domains on regular longitude-latitude coordinates and cover the minimum domain sizes ([https://cordex.org/domains](https://cordex.org/domains/)).
-
 However, a flexible choice of additional sub-domains (and experimental configuration) is allowed to accommodate needs and capacities of different communities and groups, preferably in connection with FPS activities or in coordination with ESD topical domain activities.
-
 These additional experiments could be defined by the particular regional communities in the different domains and should be coordinated with [the International Project Office for CORDEX](https://cordex.org/about/project-office/) (IPOC) and [CORDEX POCs](https://cordex.org/about/points-of-contact/) for their respective domains.
 
 ## 2. Evaluation experiment: Cross-validation
@@ -82,7 +73,6 @@ Methods with a stochastic component and those predicting distributions (i.e. dow
 ## 5. Documentation, archiving and publishing specifications
 
 CORDEX output for coordinated experiments (standard or FPS domains[^5]) shall be published on the Earth System Grid Federation (ESGF) in order to be consistent with the CMIP6 archive and to make the output available to as many users as possible by adhering to the FAIR-principles[^6].
-
 All CORDEX-CMIP6 results have to be formatted (cmorised) according to the CORDEX-CMIP6 archive specification document[^7] that provide technical aspects of CORDEX-CMIP6 data format and ESGF directory structure.. 
 
 In particular, ESD results must include the following DRS elements and corresponding values[^8]:
@@ -105,8 +95,6 @@ Moreover, statistical downscaling methods should be fully documented facilitatin
 | training_id | A short, valid identifier of the training configuration. Avoid long IDs trying to summarize all training details. No dashes are allowed in this field. | 5E |
 
 Downscaling plans must be reported to the CORDEX simulation status repository[^11].
-
----
 
 [^1]: [https://cordex.org/experiment-guidelines/cordex-cmip6/experiment-protocol-rcms/](https://cordex.org/experiment-guidelines/cordex-cmip6/experiment-protocol-rcms/)
 

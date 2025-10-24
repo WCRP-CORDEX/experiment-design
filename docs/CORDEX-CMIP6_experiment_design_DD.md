@@ -5,6 +5,7 @@ pdf: true
 # CORDEX experiment design for dynamical downscaling of CMIP6
 
 **28 Apr 2025**
+
 DOI: [10.5281/zenodo.15268192](https://doi.org/10.5281/zenodo.15268192)
 
 The COordinated Regional climate Downscaling EXperiment ([CORDEX](http://cordex.org)) was implemented under the auspices of the World Climate Research Program ([WCRP](http://www.wcrp-climate.org)).
