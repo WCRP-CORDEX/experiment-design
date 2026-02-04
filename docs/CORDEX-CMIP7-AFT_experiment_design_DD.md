@@ -4,6 +4,9 @@ pdf: true
 
 # CORDEX experiment design for dynamical downscaling of CMIP7-AFT
 
+> [!CAUTION]
+> This is a working document. Do not apply this protocol to any simulation
+
 **xx 2026**
 
 DOI: [10.5281/zenodo.xxx]()
@@ -11,17 +14,17 @@ DOI: [10.5281/zenodo.xxx]()
 The COordinated Regional climate Downscaling EXperiment ([CORDEX](http://cordex.org)) was implemented under the auspices of the World Climate Research Program ([WCRP](http://www.wcrp-climate.org)).
 Its aim is to improve downscaling techniques and their use in understanding and assessing regional climate change.
 It also provides robust regional climate information for application in vulnerability, impacts, and adaptation (VIA) studies.
-The CORDEX activity based on the downscaling of global projections from the fifth phase of the Climate Model Intercomparison Project ([CMIP5](https://wcrp-cmip.org/cmip-phases/cmip5)) has been ongoing since 2010 ([CORDEX experiment design for dynamical downscaling of CMIP5](https://doi.org/10.5281/zenodo.15199425)) and soon comes to its end.
-This experiment design document presents a simulation framework for the dynamical downscaling of global climate projections from the sixth phase of CMIP ([CMIP6](http://www.wcrp-climate.org/wgcm-cmip/wgcm-cmip6)).
-The general aim is to downscale a subset of climate scenarios from the CMIP6 ensemble of projections generated in [ScenarioMIP](https://wcrp-cmip.org/mips/scenariomip), and to make these downscaled regional scenarios publicly available.
+The CORDEX activity based on the downscaling of global projections from the sixth phase of the Climate Model Intercomparison Project ([CMIP5](https://wcrp-cmip.org/cmip-phases/cmip5)) has been ongoing since 2022 ([CORDEX experiment design for dynamical downscaling of CMIP5](https://doi.org/10.5281/zenodo.15199425)) and soon comes to its end.
+This experiment design document presents a simulation framework for the dynamical downscaling of global climate projections from the seventh phase of CMIP, particularly their Assessment Fast Track ([CMIP7-AFT](https://wcrp-cmip.org/cmip-phases/cmip7/fast-track)).
+The general aim is to downscale a subset of climate scenarios from the CMIP7-AFT ensemble of projections generated in [ScenarioMIP](https://wcrp-cmip.org/mips/scenariomip), and to make these downscaled regional scenarios publicly available.
 For more details see [Gutowski et al. 2016](https://www.geosci-model-dev.net/9/4087/2016/) and the [CORDEX White paper](https://cordex.org/wp-content/uploads/2021/05/The-future-of-CORDEX-MAY-17-2021-1.pdf).
 
 In addition to the continental-scale downscaling addressed in this document, CORDEX includes many other components.
 For example, [the Flagship Pilot Studies](https://cordex.org/strategic-activities/flagship-pilot-studies) (FPS) and regional workshops for climate and VIA communities.
 CORDEX is a continuous activity that is not divided into phases (1st, 2nd, etc.) and not necessarily related to the CMIP cycles.
-The framework described in this document is simply referred to as CORDEX-CMIP6.
+The framework described in this document is simply referred to as CORDEX-CMIP7-AFT.
 Newer versions of this document may exist.
-Find the latest one at: [https://doi.org/10.5281/zenodo.15199301](https://doi.org/10.5281/zenodo.15199301).
+Find the latest one at: [xxx](xxx).
 
 ## 1. CORDEX domains
 
@@ -58,7 +61,7 @@ However, it is recommended that corresponding, complementary simulations at the 
 
 ## 3. Model complexity
 
-As with previous CORDEX simulations, dynamical downscaling for CMIP6 should be done, at a minimum, with regional atmosphere-land surface models.
+As with previous CORDEX simulations, dynamical downscaling for CMIP7-AFT should be done, at a minimum, with regional atmosphere-land surface models.
 However, increased efforts towards regional earth system models (RESMs), which include additional model components to represent other processes (e.g. ocean, sea ice, snow, urban, lakes, vegetation/agriculture, land hydrology, glaciers, aerosols and chemistry), are encouraged.
 When possible, models should also be run in the atmosphere-land only configuration, as well as with one, or more, additional component models, in order to document the impact of the additional processes on regional climate.
 As far as is practical, each domain should also strive for a subset of simulations that use multiple models representing the same component processes to provide a multi-model perspective on RESM simulations.
@@ -93,7 +96,7 @@ The driving reanalyses should be used at 3-hourly update frequency and at their 
 
 ### GHG forcing
 
-Through 2014, RCM groups should use the same historical atmospheric greenhouse gas (GHG) forcing as in CMIP6.
+Through 2014, RCM groups should use the same historical atmospheric greenhouse gas (GHG) forcing as in CMIP7.
 For periods starting from 2015 onwards (e.g. 2015-2020) it is recommended that the scenario GHG forcing for the SSP3-7.0 be used.
 The global and annual-mean time series of GHG concentrations for both the historical and scenario periods are available from [the input4MIPs database](https://esgf-node.llnl.gov/projects/input4mips/).
 See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-2057-2017) and [Meinshausen et al. 2019](https://doi.org/10.5194/gmd-2019-222).
@@ -120,14 +123,14 @@ When possible, it is recommended that RCM groups provide two reanalysis-driven e
 
 ## 5. Historical experiment
 
-Boundary conditions from the CMIP6 historical experiment, requested by CORDEX, are available for 1950-2014[^2].
+Boundary conditions from the CMIP7 historical experiment, requested by CORDEX, are available for 1950-2024[^2].
 In addition to the moving 30-yr reference period (1991-2020 for the 2021-2030 decade) the World Meteorological Organisation ([WMO](https://public.wmo.int/en)) has also recommended that [1961-1990 be used as a standard static reference period](https://wmoomm.sharepoint.com/:b:/r/sites/wmocpdb/eve_activityarea/Climate%20Data%20and%20Monitoring_905e0e2b-3eb4-e911-a967-000d3a442d3c/WWR/clino/16953-2021-S-CS-CMP-CLINO9120-en.pdf?csf=1&web=1&e=cD4Ib7) for long-term climate change assessments.
-The CORDEX historical simulations have to cover at least 1960-2014 or preferably the entire 1950-2014 period.
+The CORDEX historical simulations have to cover at least 1960-2014 or preferably the entire 1950-2024 period.
 A one year spin-up (1950 or 1960) is recommended for atmosphere-land models but a longer spin-up (or, e.g., an offline spin-up) may be required for models that include additional climate system components.
 
 ### GHG forcing
 
-RCM groups should use the same historical GHG forcing as in the driving CMIP6 models.
+RCM groups should use the same historical GHG forcing as in the driving CMIP7 models.
 See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-2057-2017).
 
 ### Land use/Land cover
@@ -139,22 +142,20 @@ When the recommendations become available, simulations with the static land cove
 ### Aerosol
 
 A static aerosol dataset (e.g., a regional model’s default climatology) is considered as a minimum requirement.
-It is strongly encouraged that for the historical experiment RCM groups apply aerosol forcing which is either directly consistent with the driving CMIP6 GCMs or more broadly consistent with the CMIP6 aerosol forcing.
-The first priority is given to aerosol optical properties (e.g., total aerosol optical depth or aerosol optical depth per species) provided by most CMIP6 GCMs.
+It is strongly encouraged that for the historical experiment RCM groups apply aerosol forcing which is either directly consistent with the driving CMIP7 GCMs or more broadly consistent with the CMIP7 aerosol forcing.
+The first priority is given to aerosol optical properties (e.g., total aerosol optical depth or aerosol optical depth per species) provided by most CMIP7 GCMs.
 General recommendations and more details are provided through [a dedicated document](https://cordex.org/wp-content/uploads/2021/02/aerosol4cordex.pdf) which will be regularly updated.
 Comments and questions can be directly posted in [a living document](https://tinyurl.com/aerosol4cordex) or sent to the IPOC.
 
 ### Spectral nudging
 
-It is up to RCM groups to decide on whether to apply large-scale spectral nudging for the CMIP6 driven simulations or not.
+It is up to RCM groups to decide on whether to apply large-scale spectral nudging for the CMIP7 driven simulations or not.
 
 ## 6. Scenario experiment
 
-Boundary conditions from the CMIP6 ScenarioMIP, requested by CORDEX, are available for 2015-2100.
-The main focus in [the CORDEX Request to CMIP6](https://cordex.org/experiment-guidelines/cordex-cmip6/requests-to-cmip6/) (2016) was on the Tier 1 SSP5-8.5 and SSP1-2.6 scenarios.
-However, currently, there is a stronger focus on the SSP3-7.0 as a high impact scenario instead of the SSP5-8.5.
-Thus, the SSP3-7.0 and SSP1-2.6 scenarios have to be downscaled first for one ensemble member for the entire 2015-2100 period.
-It is also recommended that additional downscaling using the SSP2-4.5 scenario and/or the SSP5-8.5 scenario be completed after downscaling the SSP3-7.0 and SSP1-2.6 scenarios, if computational resources allow for additional scenarios.
+Boundary conditions from the CMIP7 ScenarioMIP, requested by CORDEX, are available for 2025-2100.
+The main focus in [the CORDEX Request to CMIP7](https://airtable.com/app2jDtttIhxC5fx7/shrAlTC2M6rDigwAr/tbljoSaMlK7m0DunX/viwXsJop1NzFH0BuL/recx9aNc6yGsi7H27) did not specify any preferred scenarios.
+However, currently, there is a strong focus on the Low to Negative (LN) and High (H) scenarios, as these complement the ongoing CORDEX-CMIP6 effort with an overshoot scenario (LN) and a scenario (H) with a similar development as the existing SSP3-7.0.
 
 If the CORDEX modeling groups have sufficient resources, additional complementary simulations for other ensemble members and scenarios of the same GCM are also welcome.
 It is up to the regional CORDEX communities to define a set of additional scenario simulations depending on resources and scientific questions.
@@ -162,7 +163,7 @@ It is strongly recommended that individual CORDEX RCM groups should coordinate t
 
 ### GHG forcing
 
-RCM groups should use the same scenario GHG forcing as in the driving CMIP6 models.
+RCM groups should use the same scenario GHG forcing as in the driving CMIP7 models.
 See for more details [Meinshausen et al. 2019](https://doi.org/10.5194/gmd-2019-222).
 
 ### Land use/Land cover
@@ -174,14 +175,14 @@ When the recommendations become available, simulations with the static land cove
 ### Aerosol
 
 A static aerosol dataset (e.g. a regional model’s default climatology) is considered as a minimum requirement.
-It is recommended that for the scenario experiment RCM groups apply aerosol forcing which is either directly consistent with the driving CMIP6 GCMs or more broadly consistent with the CMIP6 aerosol forcing.
-The first priority is given to aerosol optical properties (e.g., total aerosol optical depth or aerosol optical depth per species) provided by most CMIP6 GCMs.
+It is recommended that for the scenario experiment RCM groups apply aerosol forcing which is either directly consistent with the driving CMIP7 GCMs or more broadly consistent with the CMIP7 aerosol forcing.
+The first priority is given to aerosol optical properties (e.g., total aerosol optical depth or aerosol optical depth per species) provided by most CMIP7 GCMs.
 General recommendations and more details are provided through [a dedicated document](https://cordex.org/wp-content/uploads/2021/02/aerosol4cordex.pdf) which will be regularly updated.
 Comments and questions can be directly posted in [a living document](https://tinyurl.com/aerosol4cordex) or sent to the IPOC.
 
 ### Spectral nudging
 
-It is up to RCM groups to decide on whether to apply large-scale spectral nudging for the CMIP6 scenario driven simulations or not.
+It is up to RCM groups to decide on whether to apply large-scale spectral nudging for the CMIP7 scenario driven simulations or not.
 
 ## 7. RCM Documentation
 
@@ -194,7 +195,9 @@ Currently, a free format is assumed.
 
 There are a number of approaches but no commonly accepted methodology on how to select a subset of GCMs for downscaling.
 Additionally, a subset of GCMs selected for one CORDEX domain is not necessarily an optimal choice for other domains.
-It is up to the regional CORDEX communities to decide which CMIP6 models should be downscaled over a specific domain, considering for example: i) the ability of the CMIP6 models to simulate important aspects of regional and global climate, and ii) a range of plausible future climates simulated (e.g. regional temperature and precipitation responses) by the CMIP6 models with availability of forcing data.
+It is up to the regional CORDEX communities to decide which CMIP7 models should be downscaled over a specific domain, considering for example:
+i) the ability of the CMIP7 models to simulate important aspects of regional and global climate, and
+ii) a range of plausible future climates simulated (e.g. regional temperature and precipitation responses) by the CMIP7 models with availability of forcing data.
 It is also up to the regional CORDEX communities to decide on a minimum number of simulations and the design of RCM-GCM matrices for a specific domain, depending on resources available.
 
 ## 9. Output variables
@@ -204,8 +207,8 @@ They can be found here: [https://github.com/WCRP-CORDEX/data-request-table](http
 
 ## 10. Archiving and publishing specifications
 
-CORDEX output shall be published on the Earth System Grid Federation (ESGF) in order to be consistent with the CMIP6 archive and to make the output available to as many users as possible.
-All CORDEX simulations have to be formatted according to the [CORDEX-CMIP6 archive specifications](https://doi.org/10.5281/zenodo.10961068) that provide technical aspects of CORDEX data format and guidance for publishing CORDEX data on ESGF.
+CORDEX output shall be published on the Earth System Grid Federation (ESGF) in order to be consistent with the CMIP7 archive and to make the output available to as many users as possible.
+All CORDEX simulations have to be formatted according to the [CORDEX-CMIP7 archive specifications](xxx) that provide technical aspects of CORDEX data format and guidance for publishing CORDEX data on ESGF.
 
 !!! warning Note
 
@@ -221,15 +224,7 @@ Meinshausen, M., Nicholls, Z., Lewis, J., Gidden, M. J., Vogel, E., Freund, M., 
 
 ## Document history
 
-### 2025-04-28
-
- * Add missing links to the archive specifications, data request and LBC availability table.
- * Add DOI and link to potential newer versions.
- * Fix several broken links.
- * Remove ES-DOC mention (not available anymore).
- * Use new logos and WCRP document template.
-
-### 2021-05-18
+### 2026-xx-xx
 
  * Initial version
 
