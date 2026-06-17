@@ -96,10 +96,10 @@ The driving reanalyses should be used at 3-hourly update frequency and at their 
 
 ### GHG forcing
 
-Through 2014, RCM groups should use the same historical atmospheric greenhouse gas (GHG) forcing as in CMIP7.
-For periods starting from 2015 onwards (e.g. 2015-2020) it is recommended that the scenario GHG forcing for the SSP3-7.0 be used.
-The global and annual-mean time series of GHG concentrations for both the historical and scenario periods are available from [the input4MIPs database](https://esgf-node.llnl.gov/projects/input4mips/).
-See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-2057-2017) and [Meinshausen et al. 2019](https://doi.org/10.5194/gmd-2019-222).
+Through 2021, RCM groups should use the same historical atmospheric greenhouse gas (GHG) forcing as in CMIP7.
+For periods starting from 2022 onwards (e.g. 2022-2025) it is recommended that the GHG forcing follow H scenario be used.
+_The global and annual-mean time series of GHG concentrations for both the historical and scenario periods are available from [the input4MIPs database](https://esgf-node.llnl.gov/projects/input4mips/).
+See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-2057-2017) and [Meinshausen et al. 2019](https://doi.org/10.5194/gmd-2019-222)._
 
 ### Land use/Land cover
 
