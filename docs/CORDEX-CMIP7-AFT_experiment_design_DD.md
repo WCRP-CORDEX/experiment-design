@@ -103,9 +103,9 @@ See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-20
 
 ### Land use/Land cover
 
-As the first step, it is recommended that the static land cover and land use maps that are a regional model’s default be used.
-Recommendations for the implementation of transient land use change (e.g., datasets, translation to RCMs, etc.) will be provided later.
-When the recommendations become available, simulations with the static land cover and land use may be complemented by a number of new simulations with the transient land use change.
+It is first recommended that the static land cover and land use maps that are a regional model’s default be used for the reanalysis driven experiment.
+A second simulation for the reanalysis driven experiment with transient land use change could be done using the new global land use /land cover data set at 10 km resolution produced by the FPS LUCAS team at GERICS that will be published under the CORDEX Zenodo.
+When possible, it is recommended that RCM groups provide two reanalysis-driven evaluation simulations - with and without LUC. 
 
 ### Aerosol
 
@@ -119,14 +119,14 @@ Comments and questions can be directly posted in [a living document](https://tin
 
 It is up to RCM groups to decide on whether to apply large-scale spectral nudging for the reanalysis driven experiment or not.
 Specific details of the spectral nudging (e.g. strength, scales, variables, and levels) can be strongly region-dependent (e.g. the midlatitudes or tropics), so it is also up to RCM groups to decide on parameters for the nudging, based on their regional expertise.
-When possible, it is recommended that RCM groups provide two reanalysis-driven evaluation simulations - with and without nudging.
+When possible, it is recommended that RCM groups provide two reanalysis-driven evaluation simulations - with and without nudging, but it's up to the RCM groups.
 
 ## 5. Historical experiment
 
 Boundary conditions from the CMIP7 historical experiment, requested by CORDEX, are available for 1950-2024[^2].
 In addition to the moving 30-yr reference period (1991-2020 for the 2021-2030 decade) the World Meteorological Organisation ([WMO](https://public.wmo.int/en)) has also recommended that [1961-1990 be used as a standard static reference period](https://wmoomm.sharepoint.com/:b:/r/sites/wmocpdb/eve_activityarea/Climate%20Data%20and%20Monitoring_905e0e2b-3eb4-e911-a967-000d3a442d3c/WWR/clino/16953-2021-S-CS-CMP-CLINO9120-en.pdf?csf=1&web=1&e=cD4Ib7) for long-term climate change assessments.
-The CORDEX historical simulations have to cover at least 1960-2014 or preferably the entire 1950-2024 period.
-A one year spin-up (1950 or 1960) is recommended for atmosphere-land models but a longer spin-up (or, e.g., an offline spin-up) may be required for models that include additional climate system components.
+The CORDEX historical simulations have to cover at least 1980-2024 or preferably the entire 1970-2024 period.
+A one year spin-up (1970 or 1980) is recommended for atmosphere-land models but a longer spin-up (or, e.g., an offline spin-up) may be required for models that include additional climate system components.
 
 ### GHG forcing
 
@@ -135,9 +135,8 @@ See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-20
 
 ### Land use/Land cover
 
-As the first step, it is recommended that the static land cover and land use maps that are a regional model’s default be used.
-Recommendations for the implementation of a transient land use change (e.g., datasets, translation to RCMs, etc.) will be provided later.
-When the recommendations become available, simulations with the static land cover and land use may be complemented by a number of new simulations with the transient land use change.
+As the first step, it is recommended that the static land cover and land use maps that are a regional model’s default be used for the historical experiment.
+A second simulation for the historical experiment with transient land use change could be done using the new global land use /land cover data set at 10 km resolution produced by the FPS LUCAS team at GERICS that will be published under the CORDEX Zenodo. 
 
 ### Aerosol
 
@@ -153,9 +152,9 @@ It is up to RCM groups to decide on whether to apply large-scale spectral nudgin
 
 ## 6. Scenario experiment
 
-Boundary conditions from the CMIP7 ScenarioMIP, requested by CORDEX, are available for 2025-2100.
+Boundary conditions from the CMIP7 ScenarioMIP, requested by CORDEX, are available for 2025-2100. CMIP priorities are 1. H and VL; 2. M and HL; 3. LN and ML.
 The main focus in [the CORDEX Request to CMIP7](https://airtable.com/app2jDtttIhxC5fx7/shrAlTC2M6rDigwAr/tbljoSaMlK7m0DunX/viwXsJop1NzFH0BuL/recx9aNc6yGsi7H27) did not specify any preferred scenarios.
-However, currently, there is a strong focus on the Low to Negative (LN) and High (H) scenarios, as these complement the ongoing CORDEX-CMIP6 effort with an overshoot scenario (LN) and a scenario (H) with a similar development as the existing SSP3-7.0.
+Currently, however, the priority is the High (H) scenario for all domains, followed by the High-to-Low (HL) scenario. The second choice is up to the different domains to decide. Euro-CORDEX and CORDEX Core will prioritise HL. 
 
 If the CORDEX modeling groups have sufficient resources, additional complementary simulations for other ensemble members and scenarios of the same GCM are also welcome.
 It is up to the regional CORDEX communities to define a set of additional scenario simulations depending on resources and scientific questions.
@@ -168,9 +167,7 @@ See for more details [Meinshausen et al. 2019](https://doi.org/10.5194/gmd-2019-
 
 ### Land use/Land cover
 
-As the first step, it is recommended that the static land cover and land use maps that are a regional model’s default be used.
-Recommendations for the implementation of a transient land use change (e.g., datasets, translation to RCMs, etc.) will be provided later.
-When the recommendations become available, simulations with the static land cover and land use can be complemented by a number of new simulations with the transient land use change.
+It is recommended that the static land cover and land use maps that are a regional model’s default be used as global land use /land cover data set at 10 km resolution for the REP scenarios are still to be made.
 
 ### Aerosol
 
