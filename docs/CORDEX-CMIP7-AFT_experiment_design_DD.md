@@ -79,15 +79,10 @@ There are many ways that variable resolution is achieved and it is up to the mod
 
 ## 4. Evaluation experiment
 
-All groups must first carry out an evaluation simulation driven by the ERA5 reanalysis for each domain they simulate.
-The ERA5 reanalysis covers 1979-2024 (2024 = last full year, as of April 2025), and the evaluation experiment must cover at least the 1979-2020 period, or a longer period depending on the availability of the ERA5 forcing.
+All groups must first carry out an evaluation simulation driven by the ERA5.1 reanalysis for each domain they simulate.
+The ERA5 reanalysis covers 1979-2025 (2025 = last full year, as of July 2026), and the evaluation experiment must cover at least the 1979-2025 period, or a longer period depending on the availability of the ERA5 forcing.
 Model level or pressure level data may be used to drive RCMs.
 A one year spin-up (1979) is recommended for atmosphere-land models, but a longer spin-up (or an offline spin-up) may be required for models that include additional climate system components.
-
-The ERA5 reanalysis has [a pronounced cold bias in lower stratospheric temperature](https://www.ecmwf.int/en/elibrary/19362-global-stratospheric-temperature-bias-and-other-stratospheric-aspects-era5-and) for the years from 2000 to 2006.
-In order to fix this problem, a new set of the ERA5 reanalysis, termed ERA5.1, has been produced for 2000-2006.
-The impact of the cold bias on downscaling is not clear but it may potentially affect RCM simulations.
-It is recommended that the corrected version, ERA5.1, be used for 2000-2006.
 
 Additional evaluation experiments (e.g. at different resolutions and/or driven by other reanalyses) may also be carried out to complement the ERA5-driven experiment.
 It is up to the regional CORDEX communities to set up their own experiment design for such additional reanalysis-driven simulations, depending on their own resources and scientific questions.
@@ -99,13 +94,13 @@ The driving reanalyses should be used at 3-hourly update frequency and at their 
 
 Through 2021, RCM groups should use the same historical atmospheric greenhouse gas (GHG) forcing as in CMIP7.
 For periods starting from 2022 onwards (e.g. 2022-2025) it is recommended that the GHG forcing follow H scenario be used.
-_The global and annual-mean time series of GHG concentrations for both the historical and scenario periods are available from [the input4MIPs database](https://esgf-node.llnl.gov/projects/input4mips/).
+_Note : this has to be updated : The global and annual-mean time series of GHG concentrations for both the historical and scenario periods are available from [the input4MIPs database](https://esgf-node.llnl.gov/projects/input4mips/).
 See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-2057-2017) and [Meinshausen et al. 2019](https://doi.org/10.5194/gmd-2019-222)._
 
 ### Land use/Land cover
 
 It is first recommended that the static land cover and land use maps that are a regional model’s default be used for the reanalysis driven experiment.
-A second simulation for the reanalysis driven experiment with transient land use change could be done using the new global land use /land cover data set at 10 km resolution produced by the FPS LUCAS team at GERICS that will be published under the CORDEX Zenodo.
+A second simulation for the reanalysis driven experiment with transient land use change is recommended using the new global land use /land cover data set at 10 km resolution produced by the FPS LUCAS team at GERICS that will be published under the CORDEX Zenodo.
 When possible, it is recommended that RCM groups provide two reanalysis-driven evaluation simulations - with and without LUC. 
 
 ### Aerosol
@@ -125,7 +120,7 @@ When possible, it is recommended that RCM groups provide two reanalysis-driven e
 ## 5. Historical experiment
 
 Boundary conditions from the CMIP7 historical experiment, requested by CORDEX, are available for 1950-2024[^2].
-In addition to the moving 30-yr reference period (1991-2020 for the 2021-2030 decade) the World Meteorological Organisation ([WMO](https://public.wmo.int/en)) has also recommended that [1961-1990 be used as a standard static reference period](https://wmoomm.sharepoint.com/:b:/r/sites/wmocpdb/eve_activityarea/Climate%20Data%20and%20Monitoring_905e0e2b-3eb4-e911-a967-000d3a442d3c/WWR/clino/16953-2021-S-CS-CMP-CLINO9120-en.pdf?csf=1&web=1&e=cD4Ib7) for long-term climate change assessments.
+_Note : Is it still the case? If so should we recommend to start in 1960, as before? In addition to the moving 30-yr reference period (1991-2020 for the 2021-2030 decade) the World Meteorological Organisation ([WMO](https://public.wmo.int/en)) has also recommended that [1961-1990 be used as a standard static reference period](https://wmoomm.sharepoint.com/:b:/r/sites/wmocpdb/eve_activityarea/Climate%20Data%20and%20Monitoring_905e0e2b-3eb4-e911-a967-000d3a442d3c/WWR/clino/16953-2021-S-CS-CMP-CLINO9120-en.pdf?csf=1&web=1&e=cD4Ib7) for long-term climate change assessments._
 The CORDEX historical simulations have to cover at least 1980-2024 or preferably the entire 1970-2024 period.
 A one year spin-up (1970 or 1980) is recommended for atmosphere-land models but a longer spin-up (or, e.g., an offline spin-up) may be required for models that include additional climate system components.
 
