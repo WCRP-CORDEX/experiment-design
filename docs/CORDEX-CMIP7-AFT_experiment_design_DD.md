@@ -129,6 +129,9 @@ A one year spin-up (, 1960, 1970 or 1980) is recommended for atmosphere-land mod
 RCM groups should use the same historical GHG forcing as in the driving CMIP7 models.
 _Note : this has to be updated See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-2057-2017)._
 
+Prior to RCM simulations, GCM bias correction is not recommended for AFT, as these data are not available on ESGF and many different methods are used by different centres. 
+If RCM groups decide to use this technique, they must first provide situations driven by uncorrected GCMs. 
+
 ### Land use/Land cover
 
 As the first step, it is recommended that the static land cover and land use maps that are a regional model’s default be used for the historical experiment.
@@ -160,6 +163,10 @@ It is strongly recommended that individual CORDEX RCM groups should coordinate t
 
 RCM groups should use the same scenario GHG forcing as in the driving CMIP7 models.
 _Note : this has to be updated : See for more details [Meinshausen et al. 2019](https://doi.org/10.5194/gmd-2019-222)._
+
+Prior to RCM simulations, GCM bias correction is not recommended for AFT, as these data are not available on ESGF and many different methods are used by different centres. 
+If RCM groups decide to use this technique, they must first provide situations driven by uncorrected GCMs. 
+
 
 ### Land use/Land cover
 
