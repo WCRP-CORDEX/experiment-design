@@ -60,10 +60,14 @@ Resolutions higher than 12.5 km may also be used upon agreement within a domain.
 ## 3. Model complexity
 
 As with previous CORDEX simulations, dynamical downscaling for CMIP7-AFT should be done, at a minimum, with regional atmosphere-land surface models.
+
 However, increased efforts towards regional earth system models (RESMs), which include additional model components to represent other processes (e.g. ocean, sea ice, snow, urban, lakes, vegetation/agriculture, land hydrology, glaciers, aerosols and chemistry), are encouraged.
+
 It is up to each domain to make some components mandatory.
+
 Output and archiving of additional variables from RESMs, beyond the standard CORDEX variables, should be coordinated by each regional domain in consultation with [the CORDEX Science Advisory Team](https://cordex.org/about/science-adv-team/) (SAT).
 Many RCM details are model specific (e.g., the number of vertical levels and top level), so it is up to the RCM groups to define an optimal configuration for their RCMs.
+
 Multiple nesting can be used when necessary.
 If multiple nesting is used, the targeted domain size and resolution should still follow the standards established for that domain.
 Consult with the domain's POCs on this.
