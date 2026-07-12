@@ -47,24 +47,21 @@ We would therefore like to remind you to prioritize the Africa domain when selec
 
 ## 2. Resolution/Grid-spacing
 
-In order to provide an advancement compared to the previous CORDEX simulations, and to resolve additional features of regional climate, the grid-spacing of the new CORDEX simulations ideally should be on the order of a few tens-of-kilometers.
+In order to provide an advancement compared to the previous CORDEX simulations, and because GCMs are running at a few ten-of-kilometers, the grid-spacing of the CORDEX CMIP7 simulations ideally should be on the order of a ten-of-kilometers.
 However, a flexible choice of grid-spacing between different domains is allowed, to accommodate the needs and capacities of different communities and groups.
 
-The primary targets are grid-spacings of 25 km and 12.5 km.
-The regional CORDEX communities should decide which resolution they need and can afford, with a preference for higher resolutions when possible.
-The POCs for each domain should provide guidance on the preferred resolutions for their domain.
+The primary target is grid-spacings of 12.5 km.
 
 It is recommended that one common grid-spacing be used per domain to avoid a wide range of resolutions for the same domain.
-A resolution between 25 and 12.5 km may also be used if both 25 and 12.5 km are not optimal, and if there is a common agreement on an intermediate resolution within a domain.
+A resolution between 25 and 12.5 km may also be used if 12.5 km is not possible, and if there is a common agreement on an intermediate resolution within a domain.
 Resolutions higher than 12.5 km may also be used upon agreement within a domain.
-However, it is recommended that corresponding, complementary simulations at the domain’s primary, coarser resolution also be provided.
+
 
 ## 3. Model complexity
 
 As with previous CORDEX simulations, dynamical downscaling for CMIP7-AFT should be done, at a minimum, with regional atmosphere-land surface models.
 However, increased efforts towards regional earth system models (RESMs), which include additional model components to represent other processes (e.g. ocean, sea ice, snow, urban, lakes, vegetation/agriculture, land hydrology, glaciers, aerosols and chemistry), are encouraged.
-When possible, models should also be run in the atmosphere-land only configuration, as well as with one, or more, additional component models, in order to document the impact of the additional processes on regional climate.
-As far as is practical, each domain should also strive for a subset of simulations that use multiple models representing the same component processes to provide a multi-model perspective on RESM simulations.
+It is up to each domain to make some components mandatory.
 Output and archiving of additional variables from RESMs, beyond the standard CORDEX variables, should be coordinated by each regional domain in consultation with [the CORDEX Science Advisory Team](https://cordex.org/about/science-adv-team/) (SAT).
 Many RCM details are model specific (e.g., the number of vertical levels and top level), so it is up to the RCM groups to define an optimal configuration for their RCMs.
 Multiple nesting can be used when necessary.
