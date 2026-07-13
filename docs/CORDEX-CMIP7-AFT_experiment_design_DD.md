@@ -4,17 +4,21 @@ pdf: true
 
 # CORDEX experiment design for dynamical downscaling of CMIP7-AFT
 
-> [!CAUTION]
-> This is a working document. Do not apply this protocol to any simulation
+!!! danger "Draft version 0"
+    This is a working document. Do not apply this protocol to any simulation
+    
+    Zero-th order draft for community consultation.
+    This document is under open discussion in [https://github.com/WCRP-CORDEX/experiment-design/issues](https://github.com/WCRP-CORDEX/experiment-design/issues).
+    You can contribute there to the existing discussion topics or open a new one.
 
-**xx 2026**
+**2026-07-17**
 
-DOI: [10.5281/zenodo.xxx]()
+DOI: [10.5281/zenodo.21334009](https://doi.org/10.5281/zenodo.21334009)
 
 The COordinated Regional climate Downscaling EXperiment ([CORDEX](http://cordex.org)) was implemented under the auspices of the World Climate Research Program ([WCRP](http://www.wcrp-climate.org)).
 Its aim is to improve downscaling techniques and their use in understanding and assessing regional climate change.
 It also provides robust regional climate information for application in vulnerability, impacts, and adaptation (VIA) studies.
-The CORDEX activity based on the downscaling of global projections from the sixth phase of the Climate Model Intercomparison Project ([CMIP5](https://wcrp-cmip.org/cmip-phases/cmip5)) has been ongoing since 2022 ([CORDEX experiment design for dynamical downscaling of CMIP5](https://doi.org/10.5281/zenodo.15199425)) and soon comes to its end.
+The CORDEX activity based on the downscaling of global projections from the sixth phase of the Climate Model Intercomparison Project ([CMIP6](https://wcrp-cmip.org/cmip-phases/cmip6)) has been ongoing since 2021 ([CORDEX experiment design for dynamical downscaling of CMIP6](https://doi.org/10.5281/zenodo.15199301)) and soon comes to its end.
 This experiment design document presents a simulation framework for the dynamical downscaling of global climate projections from the seventh phase of CMIP, particularly their Assessment Fast Track ([CMIP7-AFT](https://wcrp-cmip.org/cmip-phases/cmip7/fast-track)).
 The general aim is to downscale a subset of climate scenarios from the CMIP7-AFT ensemble of projections generated in [ScenarioMIP](https://wcrp-cmip.org/mips/scenariomip), and to make these downscaled regional scenarios publicly available.
 For more details see [Gutowski et al. 2016](https://www.geosci-model-dev.net/9/4087/2016/) and the [CORDEX White paper](https://cordex.org/wp-content/uploads/2021/05/The-future-of-CORDEX-MAY-17-2021-1.pdf).
@@ -24,7 +28,7 @@ For example, [the Flagship Pilot Studies](https://cordex.org/strategic-activitie
 CORDEX is a continuous activity that is not divided into phases (1st, 2nd, etc.) and not necessarily related to the CMIP cycles.
 The framework described in this document is simply referred to as CORDEX-CMIP7-AFT.
 Newer versions of this document may exist.
-Find the latest one at: [xxx](xxx).
+Find the latest one at: [10.5281/zenodo.21334008](https://doi.org/10.5281/zenodo.21334008).
 
 ## 1. CORDEX domains
 
@@ -42,7 +46,7 @@ It is also possible to apply for a new CORDEX domain (see [Criteria for Selectin
 The request for updating a CORDEX domain has to come from [the Point-of-Contact](https://cordex.org/about/points-of-contact/) (POC) of a CORDEX domain, after a common agreement has been reached, not from individual RCM groups.
 It is recognised that any choice of a domain may not be optimal for all groups.
 
-Similar to [the CORDEX experiment design for the dynamical downscaling of CMIP5](https://doi.org/10.5281/zenodo.15199425), the CORDEX-Africa domain is a focus region.
+Similar to previous CORDEX experiments for continental-scale dynamical downscaling, the CORDEX-Africa domain is a focus region.
 We would therefore like to remind you to prioritize the Africa domain when selecting regions for integration beyond your ‘home domain’.
 
 ## 2. Resolution/Grid-spacing
@@ -80,7 +84,7 @@ There are many ways that variable resolution is achieved and it is up to the mod
 ## 4. Evaluation experiment
 
 All groups must first carry out an evaluation simulation driven by the ERA5.1 reanalysis for each domain they simulate.
-The ERA5 reanalysis covers 1979-2025 (2025 = last full year, as of July 2026), and the evaluation experiment must cover at least the 1979-2025 period, or a longer period depending on the availability of the ERA5 forcing.
+The ERA5 reanalysis covers 1979-2025 (2025 = last full year, as of July 2026), and the evaluation experiment must cover at least the 1980-2025 period, or a longer period depending on the availability of the ERA5 forcing.
 Model level or pressure level data may be used to drive RCMs.
 A one year spin-up (1979) is recommended for atmosphere-land models, but a longer spin-up (or an offline spin-up) may be required for models that include additional climate system components.
 
@@ -208,7 +212,7 @@ They can be found here: [https://github.com/WCRP-CORDEX/data-request-table](http
 ## 10. Archiving and publishing specifications
 
 CORDEX output shall be published on the Earth System Grid Federation (ESGF) in order to be consistent with the CMIP7 archive and to make the output available to as many users as possible.
-All CORDEX simulations have to be formatted according to the [CORDEX-CMIP7 archive specifications](xxx) that provide technical aspects of CORDEX data format and guidance for publishing CORDEX data on ESGF.
+All CORDEX simulations have to be formatted according to the [CORDEX-CMIP7 archive specifications](https://wcrp-cordex.github.io/archive-specifications/CORDEX-CMIP7_archiving_specifications_DD) that provide technical aspects of CORDEX data format and guidance for publishing CORDEX data on ESGF.
 
 !!! warning Note
 
@@ -224,9 +228,9 @@ Meinshausen, M., Nicholls, Z., Lewis, J., Gidden, M. J., Vogel, E., Freund, M., 
 
 ## Document history
 
-### 2026-xx-xx
+### 2026-07-17
 
- * Initial version
+ * Zero-th order draft
 
 [^1]: [https://github.com/WCRP-CORDEX/domain-tables](https://github.com/WCRP-CORDEX/domain-tables)
 

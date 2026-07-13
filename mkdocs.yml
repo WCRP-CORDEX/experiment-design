@@ -41,6 +41,10 @@ plugins:
       formats:
         pdf:
           explicit: true
+          stylesheets:
+            - assets/stylesheets/pdf.css
+          scripts:
+            - assets/scripts/pdf-header.js
       buttons:
         - title: Download as PDF
           icon: material-file-download-outline
@@ -84,7 +88,7 @@ nav:
     - Statistical Downscaling: CORDEX-CMIP6_experiment_design_ESD.md
   - CORDEX-CMIP7:
     - Overview: CORDEX-CMIP7_index.md
-    - Dynamical Downscaling: CORDEX-CMIP7_experiment_design_DD.md
+    - Dynamical Downscaling: CORDEX-CMIP7-AFT_experiment_design_DD.md
     #- Statistical Downscaling: CORDEX-CMIP7_experiment_design_ESD.md
 
 use_directory_urls: true
