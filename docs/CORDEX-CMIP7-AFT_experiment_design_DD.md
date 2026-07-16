@@ -97,9 +97,13 @@ The driving reanalyses should be used at 3-hourly update frequency and at their 
 ### GHG forcing
 
 Through 2021, RCM groups should use the same historical atmospheric greenhouse gas (GHG) forcing as in CMIP7.
+
 For periods starting from 2022 onwards (e.g. 2022-2025) it is recommended to use the GHG forcing following the High (H) emission scenario.
-Forcing data for both the historical and scenario periods are available from [the input4MIPs database](https://input4mips-cvs.readthedocs.io/en/latest/dataset-overviews).
-See for more details [Durack et al. 2025](https://doi.org/10.1175/BAMS-D-25-0119.1).
+Forcing data for both the historical and scenario periods are available from [the input4MIPs database](https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_delivery-summary.html).
+
+The CMIP7 GHG forcing has been published by [Nicholls et al. 2025](https://doi.org/10.5281/zenodo.14892937) as a Zenodo dataset.
+The same data is published on ESGF.
+Natural forcing datasets are desrcibed in [Funke et al. 2024](https://doi.org/10.5194/gmd-17-1217-2024) for solar activity and [Aubry et al. 2025](https://doi.org/10.5194/egusphere-2025-4990) for volcanic activity.
 
 ### Land use/Land cover
 
