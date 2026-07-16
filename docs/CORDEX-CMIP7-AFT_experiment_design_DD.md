@@ -97,10 +97,13 @@ The driving reanalyses should be used at 3-hourly update frequency and at their 
 ### GHG forcing
 
 Through 2021, RCM groups should use the same historical atmospheric greenhouse gas (GHG) forcing as in CMIP7.
-For periods starting from 2022 onwards (e.g. 2022-2025) it is recommended that the GHG forcing follow H scenario be used.
-For CMIP6, the the global and annual-mean time series of GHG concentrations for both the historical and scenario periods were available from [the input4MIPs database](https://esgf-node.llnl.gov/projects/input4mips/). See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-2057-2017) and [Meinshausen et al. 2019](https://doi.org/10.5194/gmd-2019-222).
 
-The CMIP7 GHG forcing has been published by [Nicholls et al. 2025](https://doi.org/10.5281/zenodo.14892937) as a Zenodo dataset. The same data will be published or was already been published on ESGF. Natural forcing datasets are desrcibed in [Funke et al. 2024](https://doi.org/10.5194/gmd-17-1217-2024) for solar activity and [Aubry et al. 2025](https://doi.org/10.5194/egusphere-2025-4990) for volcanic activity. 
+For periods starting from 2022 onwards (e.g. 2022-2025) it is recommended to use the GHG forcing following the High (H) emission scenario.
+Forcing data for both the historical and scenario periods are available from [the input4MIPs database](https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_delivery-summary.html).
+
+The CMIP7 GHG forcing has been published by [Nicholls et al. 2025](https://doi.org/10.5281/zenodo.14892937) as a Zenodo dataset.
+The same data is published on ESGF.
+Natural forcing datasets are desrcibed in [Funke et al. 2024](https://doi.org/10.5194/gmd-17-1217-2024) for solar activity and [Aubry et al. 2025](https://doi.org/10.5194/egusphere-2025-4990) for volcanic activity.
 
 ### Land use/Land cover
 
@@ -124,18 +127,17 @@ When possible, it is recommended that RCM groups provide two reanalysis-driven e
 
 ## 5. Historical experiment
 
-Boundary conditions from the CMIP7 historical experiment, requested by CORDEX, are available for 1950-2024[^2].
-_Note : Is it still the case? If so should we recommend to start in 1960, as before? In addition to the moving 30-yr reference period (1991-2020 for the 2021-2030 decade) the World Meteorological Organisation ([WMO](https://public.wmo.int/en)) has also recommended that [1961-1990 be used as a standard static reference period](https://wmoomm.sharepoint.com/:b:/r/sites/wmocpdb/eve_activityarea/Climate%20Data%20and%20Monitoring_905e0e2b-3eb4-e911-a967-000d3a442d3c/WWR/clino/16953-2021-S-CS-CMP-CLINO9120-en.pdf?csf=1&web=1&e=cD4Ib7) for long-term climate change assessments._
-The CORDEX historical simulations have to cover at least 1980-2024 or preferably the entire 1960-2024 period.
-A one year spin-up (, 1960, 1970 or 1980) is recommended for atmosphere-land models but a longer spin-up (or, e.g., an offline spin-up) may be required for models that include additional climate system components.
+Boundary conditions from the CMIP7 historical experiment, requested by CORDEX, are available for 1950-2021, with potential extension to the full 1850-2021 period or, at least, the 1850-1900 period to sample preindustrial climate.
+The CORDEX historical simulations have to cover at least 1981-2021 or preferably the entire 1961-2021 period.
+A one year spin-up (e.g. 1960, or 1980) is recommended for atmosphere-land models but a longer spin-up (or, e.g., an offline spin-up) may be required for models that include additional climate system components.
 
 ### GHG forcing
 
 RCM groups should use the same historical GHG forcing as in the driving CMIP7 models.
 _Note : this has to be updated See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-2057-2017)._
 
-Prior to RCM simulations, GCM bias correction is not recommended for AFT, as these data are not available on ESGF and many different methods are used by different centres. 
-If RCM groups decide to use this technique, they must first provide situations driven by uncorrected GCMs. 
+Prior to RCM simulations, GCM bias correction is not recommended for CORDEX-CMIP7-AFT, as these data are not available on ESGF and many different methods are used by different centres. 
+If RCM groups decide to use this technique, they must first provide simulations driven by uncorrected GCMs. 
 
 ### Land use/Land cover
 
@@ -156,9 +158,10 @@ It is up to RCM groups to decide on whether to apply large-scale spectral nudgin
 
 ## 6. Scenario experiment
 
-Boundary conditions from the CMIP7 ScenarioMIP, requested by CORDEX, are available for 2025-2100. CMIP priorities are 1. H and VL; 2. M and HL; 3. LN and ML.
-The main focus in [the CORDEX Request to CMIP7](https://airtable.com/app2jDtttIhxC5fx7/shrAlTC2M6rDigwAr/tbljoSaMlK7m0DunX/viwXsJop1NzFH0BuL/recx9aNc6yGsi7H27) did not specify any preferred scenarios.
-Currently, however, the priority is the High (H) scenario for all domains. The second choice is up to the different domains, though, and they can opt for either the High-to-Low (HL) scenario or another option. Euro-CORDEX and CORDEX Core will prioritise HL. 
+Boundary conditions from the CMIP7 ScenarioMIP, requested by CORDEX, are available for 2022-2100, with potential extensions up to 2150.
+The CORDEX [Data Request to CMIP7](https://airtable.com/app2jDtttIhxC5fx7/shrAlTC2M6rDigwAr/tbljoSaMlK7m0DunX/viwXsJop1NzFH0BuL/recx9aNc6yGsi7H27) did not specify any preferred scenarios.
+For CORDEX-CMIP7-AFT, the priority is the High (H) emissions scenario for all domains.
+The second choice is up to the different regional CORDEX communities, taking into account that driving CMIP7-AFT simulations will become available following the order: 1. H and VL; 2. M and HL; 3. LN and ML.
 
 If the CORDEX modeling groups have sufficient resources, additional complementary simulations for other ensemble members and scenarios of the same GCM are also welcome.
 It is up to the regional CORDEX communities to define a set of additional scenario simulations depending on resources and scientific questions.
@@ -222,10 +225,6 @@ All CORDEX simulations have to be formatted according to the [CORDEX-CMIP7 archi
 ## References
 
 Gutowski Jr., W. J., Giorgi, F., Timbal, B., Frigon, A., Jacob, D., Kang, H.-S., Raghavan, K., Lee, B., Lennard, C., Nikulin, G., O'Rourke, E., Rixen, M., Solman, S., Stephenson, T., and Tangang, F.: WCRP COordinated Regional Downscaling EXperiment (CORDEX): a diagnostic MIP for CMIP6, Geosci. Model Dev., 9, 4087–4095, [https://doi.org/10.5194/gmd-9-4087-2016](https://doi.org/10.5194/gmd-9-4087-2016), 2016.
-
-Meinshausen, M., Vogel, E., Nauels, A., Lorbacher, K., Meinshausen, N., Etheridge, D. M., Fraser, P. J., Montzka, S. A., Rayner, P. J., Trudinger, C. M., Krummel, P. B., Beyerle, U., Canadell, J. G., Daniel, J. S., Enting, I. G., Law, R. M., Lunder, C. R., O'Doherty, S., Prinn, R. G., Reimann, S., Rubino, M., Velders, G. J. M., Vollmer, M. K., Wang, R. H. J., and Weiss, R.: Historical greenhouse gas concentrations for climate modelling (CMIP6), Geosci. Model Dev., 10, 2057–2116, [https://doi.org/10.5194/gmd-10-2057-2017](https://doi.org/10.5194/gmd-10-2057-2017), 2017.
-
-Meinshausen, M., Nicholls, Z., Lewis, J., Gidden, M. J., Vogel, E., Freund, M., Beyerle, U., Gessner, C., Nauels, A., Bauer, N., Canadell, J. G., Daniel, J. S., John, A., Krummel, P., Luderer, G., Meinshausen, N., Montzka, S. A., Rayner, P., Reimann, S., Smith, S. J., van den Berg, M., Velders, G. J. M., Vollmer, M., and Wang, H. J.: The SSP greenhouse gas concentrations and their extensions to 2500, Geosci. Model Dev. Discuss., [https://doi.org/10.5194/gmd-2019-222](https://doi.org/10.5194/gmd-2019-222), in review, 2019.
 
 ## Document history
 
