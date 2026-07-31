@@ -8,10 +8,10 @@ pdf: true
     This is a working document. Do not apply this protocol to any simulation
     
     Zero-th order draft for community consultation.
-    This document is under open discussion in [https://github.com/WCRP-CORDEX/experiment-design/issues](https://github.com/WCRP-CORDEX/experiment-design/issues).
+    This document is under open discussion in [https://github.com/WCRP-CORDEX/experiment-design/issues](https://github.com/WCRP-CORDEX/experiment-design/issues?q=is%3Aissue).
     You can contribute there to the existing discussion topics or open a new one.
 
-**2026-07-17**
+**2026-08-04**
 
 DOI: [10.5281/zenodo.21334009](https://doi.org/10.5281/zenodo.21334009)
 
@@ -84,7 +84,7 @@ There are many ways that variable resolution is achieved and it is up to the mod
 ## 4. Evaluation experiment
 
 All groups must first carry out an evaluation simulation driven by the ERA5.1 reanalysis for each domain they simulate.
-The ERA5 reanalysis covers 1979-2025 (2025 = last full year, as of July 2026), and the evaluation experiment must cover at least the 1980-2025 period, or a longer period depending on the availability of the ERA5 forcing.
+The ERA5 reanalysis covers 1940-2025 (2025 = last full year, as of August 2026), and the evaluation experiment must cover at least the 1980-2025 period, or a longer period depending on the availability of the ERA5 forcing.
 Model level or pressure level data may be used to drive RCMs.
 A one year spin-up (1979) is recommended for atmosphere-land models, but a longer spin-up (or an offline spin-up) may be required for models that include additional climate system components.
 
@@ -101,9 +101,9 @@ Through 2021, RCM groups should use the same historical atmospheric greenhouse g
 For periods starting from 2022 onwards (e.g. 2022-2025) it is recommended to use the GHG forcing following the High (H) emission scenario.
 Forcing data for both the historical and scenario periods are available from [the input4MIPs database](https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_delivery-summary.html).
 
-The CMIP7 GHG forcing has been published by [Nicholls et al. 2025](https://doi.org/10.5281/zenodo.14892937) as a Zenodo dataset.
+The CMIP7 GHG forcing has been published by [Nicholls et al. (2025)](https://doi.org/10.5281/zenodo.14892937) as a Zenodo dataset.
 The same data is published on ESGF.
-Natural forcing datasets are desrcibed in [Funke et al. 2024](https://doi.org/10.5194/gmd-17-1217-2024) for solar activity and [Aubry et al. 2025](https://doi.org/10.5194/egusphere-2025-4990) for volcanic activity.
+Natural forcing datasets are described in [Funke et al. (2024)](https://doi.org/10.5194/gmd-17-1217-2024) for solar activity and [Aubry et al. (2025)](https://doi.org/10.5194/egusphere-2025-4990) for volcanic activity.
 
 ### Land use/Land cover
 
@@ -134,7 +134,7 @@ A one year spin-up (e.g. 1960, or 1980) is recommended for atmosphere-land model
 ### GHG forcing
 
 RCM groups should use the same historical GHG forcing as in the driving CMIP7 models.
-_Note : this has to be updated See for more details [Meinshausen et al. 2017](https://doi.org/10.5194/gmd-10-2057-2017)._
+Forcing data for the historical period are available from [the input4MIPs database](https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_delivery-summary.html).
 
 Prior to RCM simulations, GCM bias correction is not recommended for CORDEX-CMIP7-AFT, as these data are not available on ESGF and many different methods are used by different centres. 
 If RCM groups decide to use this technique, they must first provide simulations driven by uncorrected GCMs. 
@@ -170,7 +170,7 @@ It is strongly recommended that individual CORDEX RCM groups should coordinate t
 ### GHG forcing
 
 RCM groups should use the same scenario GHG forcing as in the driving CMIP7 models.
-_Note : this has to be updated : See for more details [Meinshausen et al. 2019](https://doi.org/10.5194/gmd-2019-222)._
+Forcing data for all scenarios are available from [the input4MIPs database](https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_delivery-summary.html).
 
 Prior to RCM simulations, GCM bias correction is not recommended for AFT, as these data are not available on ESGF and many different methods are used by different centres. 
 If RCM groups decide to use this technique, they must first provide situations driven by uncorrected GCMs. 
@@ -228,7 +228,7 @@ Gutowski Jr., W. J., Giorgi, F., Timbal, B., Frigon, A., Jacob, D., Kang, H.-S.,
 
 ## Document history
 
-### 2026-07-17
+### 2026-08-04
 
  * Zero-th order draft
 
