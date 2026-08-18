@@ -10,5 +10,4 @@ It aims to improve downscaling techniques and their use in understanding and ass
 
 ## Contents
 
-- [CORDEX experiment design for dynamical downscaling of CMIP6](CORDEX-CMIP6_experiment_design_DD.md)
-- [CORDEX experiment design and archiving specifications for statistical downscaling of CMIP6](CORDEX-CMIP6_experiment_design_ESD.md)
+Use the tabs above to explore the available experiment design documents for CORDEX-CMIP6 and CORDEX-CMIP7.
