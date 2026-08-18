@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<link href="https://wcrp-cordex.github.io/experiment-design/CORDEX-CMIP7-AFT_experiment_design_DD/" rel="canonical"/>
+<link href="../CORDEX-CMIP7_index/" rel="prev"/>
+<link href="../assets/images/favicon.png" rel="icon"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
+<title>Dynamical Downscaling - CORDEX Experiment Design</title>
+<link href="../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
+<link href="../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+<link href="../assets/stylesheets/custom.css" rel="stylesheet"/>
+<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+</head>
+<body data-md-color-accent="amber" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#cordex-experiment-design-for-dynamical-downscaling-of-cmip7-aft">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<div data-md-color-scheme="default" data-md-component="outdated" hidden="">
+</div>
+<header class="md-header" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="CORDEX Experiment Design" class="md-header__button md-logo" data-md-component="logo" href=".." title="CORDEX Experiment Design">
+<img alt="logo" src="../assets/images/CORDEX_RGB_logo_negative.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            CORDEX Experiment Design
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Dynamical Downscaling
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-label="Switch to dark mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_1" hidden="" title="Switch to dark mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 6H7c-3.31 0-6 2.69-6 6s2.69 6 6 6h10c3.31 0 6-2.69 6-6s-2.69-6-6-6m0 10H7c-2.21 0-4-1.79-4-4s1.79-4 4-4h10c2.21 0 4 1.79 4 4s-1.79 4-4 4M7 9c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3"></path></svg>
+</label>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="amber" data-md-color-media="" data-md-color-primary="teal" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<label class="md-header__button md-icon" for="__palette_0" hidden="" title="Switch to light mode">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3"></path></svg>
+</label>
+</form>
+<script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="" tabindex="0">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="md-header__source">
+<a class="md-source" data-md-component="source" href="https://github.com/WCRP-CORDEX/experiment-design" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    WCRP-CORDEX/experiment-design
+  </div>
+</a>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../CORDEX-CMIP6_index/">
+          
+  
+  
+    
+  
+  CORDEX-CMIP6
+
+        </a>
+</li>
+<li class="md-tabs__item md-tabs__item--active">
+<a class="md-tabs__link" href="../CORDEX-CMIP7_index/">
+          
+  
+  
+    
+  
+  CORDEX-CMIP7
+
+        </a>
+</li>
+</ul>
+</div>
+</nav>
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="CORDEX Experiment Design" class="md-nav__button md-logo" data-md-component="logo" href=".." title="CORDEX Experiment Design">
+<img alt="logo" src="../assets/images/CORDEX_RGB_logo_negative.png"/>
+</a>
+    CORDEX Experiment Design
+  </label>
+<div class="md-nav__source">
+<a class="md-source" data-md-component="source" href="https://github.com/WCRP-CORDEX/experiment-design" title="Go to repository">
+<div class="md-source__icon md-icon">
+<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"></path></svg>
+</div>
+<div class="md-source__repository">
+    WCRP-CORDEX/experiment-design
+  </div>
+</a>
+</div>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_1" type="checkbox"/>
+<label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+<span class="md-ellipsis">
+    
+  
+    CORDEX-CMIP6
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_1_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_1">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    CORDEX-CMIP6
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CORDEX-CMIP6_index/">
+<span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CORDEX-CMIP6_experiment_design_DD/">
+<span class="md-ellipsis">
+    
+  
+    Dynamical Downscaling
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CORDEX-CMIP6_experiment_design_ESD/">
+<span class="md-ellipsis">
+    
+  
+    Statistical Downscaling
+  
+
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+<span class="md-ellipsis">
+    
+  
+    CORDEX-CMIP7
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="true" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+            
+  
+    CORDEX-CMIP7
+  
+
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../CORDEX-CMIP7_index/">
+<span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    
+  
+    Dynamical Downscaling
+  
+
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    
+  
+    Dynamical Downscaling
+  
+
+    
+  </span>
+</a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-cordex-domains">
+<span class="md-ellipsis">
+      
+        1. CORDEX domains
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-resolutiongrid-spacing">
+<span class="md-ellipsis">
+      
+        2. Resolution/Grid-spacing
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-model-complexity">
+<span class="md-ellipsis">
+      
+        3. Model complexity
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-evaluation-experiment">
+<span class="md-ellipsis">
+      
+        4. Evaluation experiment
+      
+    </span>
+</a>
+<nav aria-label="4. Evaluation experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ghg-forcing">
+<span class="md-ellipsis">
+      
+        GHG forcing
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#land-useland-cover">
+<span class="md-ellipsis">
+      
+        Land use/Land cover
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aerosol">
+<span class="md-ellipsis">
+      
+        Aerosol
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spectral-nudging">
+<span class="md-ellipsis">
+      
+        Spectral nudging
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-historical-experiment">
+<span class="md-ellipsis">
+      
+        5. Historical experiment
+      
+    </span>
+</a>
+<nav aria-label="5. Historical experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ghg-forcing_1">
+<span class="md-ellipsis">
+      
+        GHG forcing
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#land-useland-cover_1">
+<span class="md-ellipsis">
+      
+        Land use/Land cover
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aerosol_1">
+<span class="md-ellipsis">
+      
+        Aerosol
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spectral-nudging_1">
+<span class="md-ellipsis">
+      
+        Spectral nudging
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-scenario-experiment">
+<span class="md-ellipsis">
+      
+        6. Scenario experiment
+      
+    </span>
+</a>
+<nav aria-label="6. Scenario experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ghg-forcing_2">
+<span class="md-ellipsis">
+      
+        GHG forcing
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#land-useland-cover_2">
+<span class="md-ellipsis">
+      
+        Land use/Land cover
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aerosol_2">
+<span class="md-ellipsis">
+      
+        Aerosol
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spectral-nudging_2">
+<span class="md-ellipsis">
+      
+        Spectral nudging
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-rcm-documentation">
+<span class="md-ellipsis">
+      
+        7. RCM Documentation
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8-selection-of-gcms">
+<span class="md-ellipsis">
+      
+        8. Selection of GCMs
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9-output-variables">
+<span class="md-ellipsis">
+      
+        9. Output variables
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10-archiving-and-publishing-specifications">
+<span class="md-ellipsis">
+      
+        10. Archiving and publishing specifications
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+<span class="md-ellipsis">
+      
+        References
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-history">
+<span class="md-ellipsis">
+      
+        Document history
+      
+    </span>
+</a>
+<nav aria-label="Document history" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2026-08-18">
+<span class="md-ellipsis">
+      
+        2026-08-18
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#1-cordex-domains">
+<span class="md-ellipsis">
+      
+        1. CORDEX domains
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2-resolutiongrid-spacing">
+<span class="md-ellipsis">
+      
+        2. Resolution/Grid-spacing
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3-model-complexity">
+<span class="md-ellipsis">
+      
+        3. Model complexity
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#4-evaluation-experiment">
+<span class="md-ellipsis">
+      
+        4. Evaluation experiment
+      
+    </span>
+</a>
+<nav aria-label="4. Evaluation experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ghg-forcing">
+<span class="md-ellipsis">
+      
+        GHG forcing
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#land-useland-cover">
+<span class="md-ellipsis">
+      
+        Land use/Land cover
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aerosol">
+<span class="md-ellipsis">
+      
+        Aerosol
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spectral-nudging">
+<span class="md-ellipsis">
+      
+        Spectral nudging
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#5-historical-experiment">
+<span class="md-ellipsis">
+      
+        5. Historical experiment
+      
+    </span>
+</a>
+<nav aria-label="5. Historical experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ghg-forcing_1">
+<span class="md-ellipsis">
+      
+        GHG forcing
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#land-useland-cover_1">
+<span class="md-ellipsis">
+      
+        Land use/Land cover
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aerosol_1">
+<span class="md-ellipsis">
+      
+        Aerosol
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spectral-nudging_1">
+<span class="md-ellipsis">
+      
+        Spectral nudging
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#6-scenario-experiment">
+<span class="md-ellipsis">
+      
+        6. Scenario experiment
+      
+    </span>
+</a>
+<nav aria-label="6. Scenario experiment" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#ghg-forcing_2">
+<span class="md-ellipsis">
+      
+        GHG forcing
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#land-useland-cover_2">
+<span class="md-ellipsis">
+      
+        Land use/Land cover
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#aerosol_2">
+<span class="md-ellipsis">
+      
+        Aerosol
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#spectral-nudging_2">
+<span class="md-ellipsis">
+      
+        Spectral nudging
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#7-rcm-documentation">
+<span class="md-ellipsis">
+      
+        7. RCM Documentation
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#8-selection-of-gcms">
+<span class="md-ellipsis">
+      
+        8. Selection of GCMs
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#9-output-variables">
+<span class="md-ellipsis">
+      
+        9. Output variables
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#10-archiving-and-publishing-specifications">
+<span class="md-ellipsis">
+      
+        10. Archiving and publishing specifications
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#references">
+<span class="md-ellipsis">
+      
+        References
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#document-history">
+<span class="md-ellipsis">
+      
+        Document history
+      
+    </span>
+</a>
+<nav aria-label="Document history" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#2026-08-18">
+<span class="md-ellipsis">
+      
+        2026-08-18
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download="Dynamical Downscaling.pdf" href="index.pdf" title="Download as PDF"><html><body><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m14 2 6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm4 18V9h-5V4H6v16zm-6-1-4-4h2.5v-3h3v3H16z"></path></svg></body></html></a>
+<h1 id="cordex-experiment-design-for-dynamical-downscaling-of-cmip7-aft">CORDEX experiment design for dynamical downscaling of CMIP7-AFT<a class="headerlink" href="#cordex-experiment-design-for-dynamical-downscaling-of-cmip7-aft" title="Permanent link">¶</a></h1>
+<div class="admonition danger">
+<p class="admonition-title">Draft version 0</p>
+<p>This is a working document. Do not apply this protocol to any simulation</p>
+<p>Zero-th order draft for community consultation.
+This document is under open discussion in <a href="https://github.com/WCRP-CORDEX/experiment-design/issues?q=is%3Aissue">https://github.com/WCRP-CORDEX/experiment-design/issues</a>.
+You can contribute there to the existing discussion topics or open a new one.</p>
+</div>
+<p><strong>2026-08-18</strong></p>
+<p>DOI: <a href="https://doi.org/10.5281/zenodo.21334009">10.5281/zenodo.21334009</a></p>
+<p>The COordinated Regional climate Downscaling EXperiment (<a href="http://cordex.org">CORDEX</a>) was implemented under the auspices of the World Climate Research Program (<a href="http://www.wcrp-climate.org">WCRP</a>).
+Its aim is to improve downscaling techniques and their use in understanding and assessing regional climate change.
+It also provides robust regional climate information for application in vulnerability, impacts, and adaptation (VIA) studies.
+The CORDEX activity based on the downscaling of global projections from the sixth phase of the Climate Model Intercomparison Project (<a href="https://wcrp-cmip.org/cmip-phases/cmip6">CMIP6</a>) has been ongoing since 2021 (<a href="https://doi.org/10.5281/zenodo.15199301">CORDEX experiment design for dynamical downscaling of CMIP6</a>) and soon comes to its end.
+This experiment design document presents a simulation framework for the dynamical downscaling of global climate projections from the seventh phase of CMIP, particularly their Assessment Fast Track (<a href="https://wcrp-cmip.org/cmip-phases/cmip7/fast-track">CMIP7-AFT</a>).
+The general aim is to downscale a subset of climate scenarios from the CMIP7-AFT ensemble of projections generated in <a href="https://wcrp-cmip.org/mips/scenariomip">ScenarioMIP</a>, and to make these downscaled regional scenarios publicly available.
+For more details see <a href="https://www.geosci-model-dev.net/9/4087/2016/">Gutowski et al. 2016</a> and the <a href="https://cordex.org/wp-content/uploads/2021/05/The-future-of-CORDEX-MAY-17-2021-1.pdf">CORDEX White paper</a>.</p>
+<p>In addition to the continental-scale downscaling addressed in this document, CORDEX includes many other components.
+For example, <a href="https://cordex.org/strategic-activities/flagship-pilot-studies">the Flagship Pilot Studies</a> (FPS) and regional workshops for climate and VIA communities.
+CORDEX is a continuous activity that is not divided into phases (1st, 2nd, etc.) and not necessarily related to the CMIP cycles.
+The framework described in this document is simply referred to as CORDEX-CMIP7-AFT.
+Newer versions of this document may exist.
+Find the latest one at: <a href="https://doi.org/10.5281/zenodo.21334008">10.5281/zenodo.21334008</a>.</p>
+<h2 id="1-cordex-domains">1. CORDEX domains<a class="headerlink" href="#1-cordex-domains" title="Permanent link">¶</a></h2>
+<p>The requirement of a common domain is fundamental to coordination of activities that produce common output datasets and facilitate ease of analysis of results for given domains.
+<a href="http://cordex.org/domains/">14 standard continental-scale CORDEX domains</a> have received an official CORDEX designation and include: South America, Central America, North America, Europe, Mediterranean, Middle East and North Africa, Africa, Central Asia, South Asia, East Asia, Southeast Asia, Australasia, the Arctic and Antarctica.
+The simulations have to follow the size specifications for the CORDEX domains<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup>, paying particular attention to the specified minimum domain sizes.
+Notably, the CORDEX domain has to be fully inside your model domain and not include any of the boundary relaxation zones.
+It is appreciated that domains will not be identical, as for various reasons groups may choose to modify their actual domains somewhat.</p>
+<p>This experiment design addresses the 14 continental-scale CORDEX domains, which cover the majority of the populated land areas worldwide, as well as the Arctic and Antarctic.
+Currently, smaller domains may be addressed within <a href="https://cordex.org/strategic-activities/flagship-pilot-studies">the Flagship Pilot Studies</a> (FPS) programme.</p>
+<p>If the regional CORDEX communities think that the configuration of their CORDEX domains is not optimal (e.g. too small, too large, etc.) they can provide a formal request to <a href="https://cordex.org/about/project-office/">the International Project Office for CORDEX</a> (IPOC) to update the current configuration.
+It is also possible to apply for a new CORDEX domain (see <a href="https://cordex.org/wp-content/uploads/2020/09/Domain-Criteria-Document-FINAL.pdf">Criteria for Selecting and Updating CORDEX Domains</a>).
+The request for updating a CORDEX domain has to come from <a href="https://cordex.org/about/points-of-contact/">the Point-of-Contact</a> (POC) of a CORDEX domain, after a common agreement has been reached, not from individual RCM groups.
+It is recognised that any choice of a domain may not be optimal for all groups.</p>
+<p>Similar to previous CORDEX experiments for continental-scale dynamical downscaling, the CORDEX-Africa domain is a focus region.
+We would therefore like to remind you to prioritize the Africa domain when selecting regions for integration beyond your ‘home domain’.</p>
+<h2 id="2-resolutiongrid-spacing">2. Resolution/Grid-spacing<a class="headerlink" href="#2-resolutiongrid-spacing" title="Permanent link">¶</a></h2>
+<p>In order to provide an advancement compared to the previous CORDEX simulations, and because GCMs are running at a few ten-of-kilometers, the grid-spacing of the CORDEX CMIP7 simulations ideally should be on the order of a ten-of-kilometers.
+However, a flexible choice of grid-spacing between different domains is allowed, to accommodate the needs and capacities of different communities and groups.</p>
+<p>The primary target is grid-spacings of 12.5 km.</p>
+<p>It is recommended that one common grid-spacing be used per domain to avoid a wide range of resolutions for the same domain.
+A resolution between 25 and 12.5 km may also be used if 12.5 km is not possible, and if there is a common agreement on an intermediate resolution within a domain.
+Resolutions higher than 12.5 km may also be used upon agreement within a domain.</p>
+<h2 id="3-model-complexity">3. Model complexity<a class="headerlink" href="#3-model-complexity" title="Permanent link">¶</a></h2>
+<p>As with previous CORDEX simulations, dynamical downscaling for CMIP7-AFT should be done, at a minimum, with regional atmosphere-land surface models.</p>
+<p>However, increased efforts towards regional earth system models (RESMs), which include additional model components to represent other processes (e.g. ocean, sea ice, snow, urban, lakes, vegetation/agriculture, land hydrology, glaciers, aerosols and chemistry), are encouraged.</p>
+<p>It is up to each domain to make some components mandatory.</p>
+<p>Output and archiving of additional variables from RESMs, beyond the standard CORDEX variables, should be coordinated by each regional domain in consultation with <a href="https://cordex.org/about/science-adv-team/">the CORDEX Science Advisory Team</a> (SAT).
+Many RCM details are model specific (e.g., the number of vertical levels and top level), so it is up to the RCM groups to define an optimal configuration for their RCMs.</p>
+<p>Multiple nesting can be used when necessary.
+If multiple nesting is used, the targeted domain size and resolution should still follow the standards established for that domain.
+Consult with the domain's POCs on this.</p>
+<p>Variable resolution global climate models (VR-GCMs) that follow the CORDEX protocol for a given domain (e.g., resolution, etc.) may also contribute to that domain.
+In this case, the use of atmospheric nudging to incorporate information from the driving GCMs’ atmosphere is encouraged; thus, making the VR-GCMs more comparable to the limited area RCMs.
+The inclusion of VR-GCMs adds to the overall diversity of the CORDEX ensembles, which provides some advantages, but the methodological differences when compared to limited area RCMs should be considered when combining the VR-GCMs and RCMs in an ensemble.
+There are many ways that variable resolution is achieved and it is up to the modelling groups to determine an optimal configuration.</p>
+<h2 id="4-evaluation-experiment">4. Evaluation experiment<a class="headerlink" href="#4-evaluation-experiment" title="Permanent link">¶</a></h2>
+<p>All groups must first carry out an evaluation simulation driven by the ERA5.1 reanalysis for each domain they simulate.
+The ERA5 reanalysis covers 1940-2025 (2025 = last full year, as of August 2026), and the evaluation experiment must cover at least the 1980-2025 period, or a longer period depending on the availability of the ERA5 forcing.
+Model level or pressure level data may be used to drive RCMs.
+A one year spin-up (1979) is recommended for atmosphere-land models, but a longer spin-up (or an offline spin-up) may be required for models that include additional climate system components.</p>
+<p>Additional evaluation experiments (e.g. at different resolutions and/or driven by other reanalyses) may also be carried out to complement the ERA5-driven experiment.
+It is up to the regional CORDEX communities to set up their own experiment design for such additional reanalysis-driven simulations, depending on their own resources and scientific questions.</p>
+<p>It is recommended that prescribed sea surface temperature and sea ice fraction also be obtained from the driving reanalyses.
+The driving reanalyses should be used at 3-hourly update frequency and at their native resolution when possible.</p>
+<h3 id="ghg-forcing">GHG forcing<a class="headerlink" href="#ghg-forcing" title="Permanent link">¶</a></h3>
+<p>Through 2021, RCM groups should use the same historical atmospheric greenhouse gas (GHG) forcing as in CMIP7.</p>
+<p>For periods starting from 2022 onwards (e.g. 2022-2025) it is recommended to use the GHG forcing following the High (H) emission scenario.
+Forcing data for both the historical and scenario periods are available from <a href="https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_delivery-summary.html">the input4MIPs database</a>.</p>
+<p>The CMIP7 GHG forcing has been published by <a href="https://doi.org/10.5281/zenodo.14892937">Nicholls et al. (2025)</a> as a Zenodo dataset.
+The same data is published on ESGF.
+Natural forcing datasets are described in <a href="https://doi.org/10.5194/gmd-17-1217-2024">Funke et al. (2024)</a> for solar activity and <a href="https://doi.org/10.5194/egusphere-2025-4990">Aubry et al. (2025)</a> for volcanic activity.</p>
+<h3 id="land-useland-cover">Land use/Land cover<a class="headerlink" href="#land-useland-cover" title="Permanent link">¶</a></h3>
+<p>It is first recommended that the static land cover and land use maps that are a regional model’s default be used for the reanalysis driven experiment.
+A second simulation for the reanalysis driven experiment with transient land use change is recommended using the new global land use /land cover data set at 10 km resolution produced by the FPS LUCAS team at GERICS that will be published under the CORDEX Zenodo.
+When possible, it is recommended that RCM groups provide two reanalysis-driven evaluation simulations - with and without LUC. </p>
+<h3 id="aerosol">Aerosol<a class="headerlink" href="#aerosol" title="Permanent link">¶</a></h3>
+<p>A static aerosol dataset (e.g. a regional model’s default climatology) is considered as a minimum requirement.
+It is strongly encouraged that for the evaluation experiment, RCM groups apply up-to-date regional or global aerosol datasets with realistic variability in time (monthly variation and trend) and space.
+For example, the state-of-the-art monthly mean MERRA-2 aerosol dataset can be used.
+Implementation of aerosol forcing in RCMs is model-dependent and general recommendations and more details are provided through <a href="https://cordex.org/wp-content/uploads/2021/02/aerosol4cordex.pdf">a dedicated document</a> which will be regularly updated.
+Comments and questions can be directly posted in <a href="https://tinyurl.com/aerosol4cordex">a living document</a> or sent to the IPOC.</p>
+<h3 id="spectral-nudging">Spectral nudging<a class="headerlink" href="#spectral-nudging" title="Permanent link">¶</a></h3>
+<p>It is up to RCM groups to decide on whether to apply large-scale spectral nudging for the reanalysis driven experiment or not.
+Specific details of the spectral nudging (e.g. strength, scales, variables, and levels) can be strongly region-dependent (e.g. the midlatitudes or tropics), so it is also up to RCM groups to decide on parameters for the nudging, based on their regional expertise.
+When possible, it is recommended that RCM groups provide two reanalysis-driven evaluation simulations - with and without nudging, but it's up to the RCM groups.</p>
+<h2 id="5-historical-experiment">5. Historical experiment<a class="headerlink" href="#5-historical-experiment" title="Permanent link">¶</a></h2>
+<p>Boundary conditions from the CMIP7 historical experiment, requested by CORDEX, are available for 1950-2021, with potential extension to the full 1850-2021 period or, at least, the 1850-1900 period to sample preindustrial climate.
+The CORDEX historical simulations have to cover at least 1981-2021 or preferably the entire 1961-2021 period.
+A one year spin-up (e.g. 1960, or 1980) is recommended for atmosphere-land models but a longer spin-up (or, e.g., an offline spin-up) may be required for models that include additional climate system components.</p>
+<h3 id="ghg-forcing_1">GHG forcing<a class="headerlink" href="#ghg-forcing_1" title="Permanent link">¶</a></h3>
+<p>RCM groups should use the same historical GHG forcing as in the driving CMIP7 models.
+Forcing data for the historical period are available from <a href="https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_delivery-summary.html">the input4MIPs database</a>.</p>
+<p>Prior to RCM simulations, GCM bias correction is not recommended for CORDEX-CMIP7-AFT, as these data are not available on ESGF and many different methods are used by different centres. 
+If RCM groups decide to use this technique, they must first provide simulations driven by uncorrected GCMs. </p>
+<h3 id="land-useland-cover_1">Land use/Land cover<a class="headerlink" href="#land-useland-cover_1" title="Permanent link">¶</a></h3>
+<p>As the first step, it is recommended that the static land cover and land use maps that are a regional model’s default be used for the historical experiment.
+A second simulation for the historical experiment with transient land use change could be done using the new global land use /land cover data set at 10 km resolution produced by the FPS LUCAS team at GERICS that will be published under the CORDEX Zenodo. </p>
+<h3 id="aerosol_1">Aerosol<a class="headerlink" href="#aerosol_1" title="Permanent link">¶</a></h3>
+<p>A static aerosol dataset (e.g., a regional model’s default climatology) is considered as a minimum requirement.
+It is strongly encouraged that for the historical experiment RCM groups apply aerosol forcing which is either directly consistent with the driving CMIP7 GCMs or more broadly consistent with the CMIP7 aerosol forcing.
+The first priority is given to aerosol optical properties (e.g., total aerosol optical depth or aerosol optical depth per species) provided by most CMIP7 GCMs.
+General recommendations and more details are provided through <a href="https://cordex.org/wp-content/uploads/2021/02/aerosol4cordex.pdf">a dedicated document</a> which will be regularly updated.
+Comments and questions can be directly posted in <a href="https://tinyurl.com/aerosol4cordex">a living document</a> or sent to the IPOC.</p>
+<h3 id="spectral-nudging_1">Spectral nudging<a class="headerlink" href="#spectral-nudging_1" title="Permanent link">¶</a></h3>
+<p>It is up to RCM groups to decide on whether to apply large-scale spectral nudging for the CMIP7 driven simulations or not.</p>
+<h2 id="6-scenario-experiment">6. Scenario experiment<a class="headerlink" href="#6-scenario-experiment" title="Permanent link">¶</a></h2>
+<p>Boundary conditions from the CMIP7 ScenarioMIP, requested by CORDEX, are available for 2022-2100, with potential extensions up to 2150.
+The CORDEX <a href="https://airtable.com/app2jDtttIhxC5fx7/shrAlTC2M6rDigwAr/tbljoSaMlK7m0DunX/viwXsJop1NzFH0BuL/recx9aNc6yGsi7H27">Data Request to CMIP7</a> did not specify any preferred scenarios.
+For CORDEX-CMIP7-AFT, the priority is the High (H) emissions scenario for all domains.
+The second choice is up to the different regional CORDEX communities, taking into account that driving CMIP7-AFT simulations will become available following the order: 1. H and VL; 2. M and HL; 3. LN and ML.</p>
+<p>If the CORDEX modeling groups have sufficient resources, additional complementary simulations for other ensemble members and scenarios of the same GCM are also welcome.
+It is up to the regional CORDEX communities to define a set of additional scenario simulations depending on resources and scientific questions.
+It is strongly recommended that individual CORDEX RCM groups should coordinate their simulations with <a href="https://cordex.org/about/points-of-contact/">CORDEX POCs</a> for respective domains in order to avoid uncoordinated efforts leading to sparse and unbalanced RCM-GCM matrices.</p>
+<h3 id="ghg-forcing_2">GHG forcing<a class="headerlink" href="#ghg-forcing_2" title="Permanent link">¶</a></h3>
+<p>RCM groups should use the same scenario GHG forcing as in the driving CMIP7 models.
+Forcing data for all scenarios are available from <a href="https://input4mips-cvs.readthedocs.io/en/latest/database-views/input4MIPs_delivery-summary.html">the input4MIPs database</a>.</p>
+<p>Prior to RCM simulations, GCM bias correction is not recommended for AFT, as these data are not available on ESGF and many different methods are used by different centres. 
+If RCM groups decide to use this technique, they must first provide situations driven by uncorrected GCMs. </p>
+<h3 id="land-useland-cover_2">Land use/Land cover<a class="headerlink" href="#land-useland-cover_2" title="Permanent link">¶</a></h3>
+<p>It is recommended that the static land cover and land use maps that are a regional model’s default be used as global land use /land cover data set at 10 km resolution for the REP scenarios are still to be made.</p>
+<h3 id="aerosol_2">Aerosol<a class="headerlink" href="#aerosol_2" title="Permanent link">¶</a></h3>
+<p>A static aerosol dataset (e.g. a regional model’s default climatology) is considered as a minimum requirement.
+It is recommended that for the scenario experiment RCM groups apply aerosol forcing which is either directly consistent with the driving CMIP7 GCMs or more broadly consistent with the CMIP7 aerosol forcing.
+The first priority is given to aerosol optical properties (e.g., total aerosol optical depth or aerosol optical depth per species) provided by most CMIP7 GCMs.
+General recommendations and more details are provided through <a href="https://cordex.org/wp-content/uploads/2021/02/aerosol4cordex.pdf">a dedicated document</a> which will be regularly updated.
+Comments and questions can be directly posted in <a href="https://tinyurl.com/aerosol4cordex">a living document</a> or sent to the IPOC.</p>
+<h3 id="spectral-nudging_2">Spectral nudging<a class="headerlink" href="#spectral-nudging_2" title="Permanent link">¶</a></h3>
+<p>It is up to RCM groups to decide on whether to apply large-scale spectral nudging for the CMIP7 scenario driven simulations or not.</p>
+<h2 id="7-rcm-documentation">7. RCM Documentation<a class="headerlink" href="#7-rcm-documentation" title="Permanent link">¶</a></h2>
+<p>Climate model documentation, providing all necessary details on model configurations, experiments, etc., is an integral part of climate modeling activities.
+A coordinated effort to describe the models is still missing in CORDEX and currently there is no common system for collecting and providing RCM details, although work in this direction is ongoing.
+Nonetheless, when possible, it is strongly recommended to create RCM documentation and errata, if necessary, that details all aspects of the experiments and make it publicly available by the regional communities.
+Currently, a free format is assumed.</p>
+<h2 id="8-selection-of-gcms">8. Selection of GCMs<a class="headerlink" href="#8-selection-of-gcms" title="Permanent link">¶</a></h2>
+<p>There are a number of approaches but no commonly accepted methodology on how to select a subset of GCMs for downscaling.
+Additionally, a subset of GCMs selected for one CORDEX domain is not necessarily an optimal choice for other domains.
+It is up to the regional CORDEX communities to decide which CMIP7 models should be downscaled over a specific domain, considering for example:
+i) the ability of the CMIP7 models to simulate important aspects of regional and global climate, and
+ii) a range of plausible future climates simulated (e.g. regional temperature and precipitation responses) by the CMIP7 models with availability of forcing data.
+It is also up to the regional CORDEX communities to decide on a minimum number of simulations and the design of RCM-GCM matrices for a specific domain, depending on resources available.</p>
+<h2 id="9-output-variables">9. Output variables<a class="headerlink" href="#9-output-variables" title="Permanent link">¶</a></h2>
+<p>The CORDEX Data Request (DR) details variables and frequencies to be saved and their priorities for delivery.
+They can be found here: <a href="https://github.com/WCRP-CORDEX/data-request-table">https://github.com/WCRP-CORDEX/data-request-table</a></p>
+<h2 id="10-archiving-and-publishing-specifications">10. Archiving and publishing specifications<a class="headerlink" href="#10-archiving-and-publishing-specifications" title="Permanent link">¶</a></h2>
+<p>CORDEX output shall be published on the Earth System Grid Federation (ESGF) in order to be consistent with the CMIP7 archive and to make the output available to as many users as possible.
+All CORDEX simulations have to be formatted according to the <a href="https://wcrp-cordex.github.io/archive-specifications/CORDEX-CMIP7_archiving_specifications_DD">CORDEX-CMIP7 archive specifications</a> that provide technical aspects of CORDEX data format and guidance for publishing CORDEX data on ESGF.</p>
+<div class="admonition warning note">
+<p class="admonition-title">Warning</p>
+<p>Once again, it is strongly recommended to avoid any uncoordinated  efforts and coordinate all activities with the POCs. If there are any questions and/or there is a need for guidance,  contact the POCs first. If this does not help, contact the IPOC.</p>
+</div>
+<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">¶</a></h2>
+<p>Gutowski Jr., W. J., Giorgi, F., Timbal, B., Frigon, A., Jacob, D., Kang, H.-S., Raghavan, K., Lee, B., Lennard, C., Nikulin, G., O'Rourke, E., Rixen, M., Solman, S., Stephenson, T., and Tangang, F.: WCRP COordinated Regional Downscaling EXperiment (CORDEX): a diagnostic MIP for CMIP6, Geosci. Model Dev., 9, 4087–4095, <a href="https://doi.org/10.5194/gmd-9-4087-2016">https://doi.org/10.5194/gmd-9-4087-2016</a>, 2016.</p>
+<h2 id="document-history">Document history<a class="headerlink" href="#document-history" title="Permanent link">¶</a></h2>
+<h3 id="2026-08-18">2026-08-18<a class="headerlink" href="#2026-08-18" title="Permanent link">¶</a></h3>
+<ul>
+<li>Zero-th order draft</li>
+</ul>
+<div class="footnote">
+<hr/>
+<ol>
+<li id="fn:1">
+<p><a href="https://github.com/WCRP-CORDEX/domain-tables">https://github.com/WCRP-CORDEX/domain-tables</a> <a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">↩</a></p>
+</li>
+<li id="fn:2">
+<p>Not all CMIP6 GCMs provide enough data to drive RCMs. This list can be checked: <a href="https://wcrp-cordex.github.io/cmip6-for-cordex/CMIP6_for_CORDEX_availability_RCM.html">https://wcrp-cordex.github.io/cmip6-for-cordex/CMIP6_for_CORDEX_availability_RCM.html</a> <a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">↩</a></p>
+</li>
+</ol>
+</div>
+</article>
+</div>
+<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+</div>
+<button class="md-top md-icon" data-md-component="top" hidden="" type="button">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"></path></svg>
+  Back to top
+</button>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.sections", "navigation.indexes", "toc.follow", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy", "content.footnote.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+<script src="../assets/javascripts/bundle.d7400e89.min.js"></script>
+</body>
+</html>
