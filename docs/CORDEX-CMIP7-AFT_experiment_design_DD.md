@@ -11,7 +11,7 @@ pdf: true
     This document is under open discussion in [https://github.com/WCRP-CORDEX/experiment-design/issues](https://github.com/WCRP-CORDEX/experiment-design/issues?q=is%3Aissue).
     You can contribute there to the existing discussion topics or open a new one.
 
-**2026-08-04**
+**2026-08-18**
 
 DOI: [10.5281/zenodo.21334009](https://doi.org/10.5281/zenodo.21334009)
 
@@ -228,7 +228,7 @@ Gutowski Jr., W. J., Giorgi, F., Timbal, B., Frigon, A., Jacob, D., Kang, H.-S.,
 
 ## Document history
 
-### 2026-08-04
+### 2026-08-18
 
  * Zero-th order draft
 
