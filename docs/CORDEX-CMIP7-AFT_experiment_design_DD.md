@@ -4,14 +4,14 @@ pdf: true
 
 # CORDEX experiment design for dynamical downscaling of CMIP7-AFT
 
-!!! danger "Draft version 0"
+!!! danger "Draft version 0b"
     This is a working document. Do not apply this protocol to any simulation
     
     Zero-th order draft for community consultation.
     This document is under open discussion in [https://github.com/WCRP-CORDEX/experiment-design/issues](https://github.com/WCRP-CORDEX/experiment-design/issues?q=is%3Aissue).
     You can contribute there to the existing discussion topics or open a new one.
 
-**2026-08-18**
+**2026-11-XXX**
 
 DOI: [10.5281/zenodo.21334009](https://doi.org/10.5281/zenodo.21334009)
 
@@ -29,6 +29,11 @@ CORDEX is a continuous activity that is not divided into phases (1st, 2nd, etc.)
 The framework described in this document is simply referred to as CORDEX-CMIP7-AFT.
 Newer versions of this document may exist.
 Find the latest one at: [10.5281/zenodo.21334008](https://doi.org/10.5281/zenodo.21334008).
+
+!!! info "CORDEX-CORE"
+    This document covers the experiment design for the general regional Domain activity.
+    CORDEX-CORE aims to provide homogeneous cross-domain results and, therefore, poses additional requirements on the experiment design.
+    The specific requirements are provided in these _CORDEX-CORE boxes_ where appropriate.
 
 ## 1. CORDEX domains
 
@@ -48,6 +53,12 @@ It is recognised that any choice of a domain may not be optimal for all groups.
 
 Similar to previous CORDEX experiments for continental-scale dynamical downscaling, the CORDEX-Africa domain is a focus region.
 We would therefore like to remind you to prioritize the Africa domain when selecting regions for integration beyond your ‘home domain’.
+
+!!! info "CORDEX-CORE"
+    CORDEX-CORE aims to cover all major populated areas in the world.
+    Thus, the CORDEX-CORE domain set includes the 9 domains: SAM, CAM, NAM, EUR, AFR, WAS, EAS, SEA, AUS.
+    A minimal set of 7 of these domains needs to be covered the the RCMs participating in the CORDEX-CORE experiment.
+
 
 ## 2. Resolution/Grid-spacing
 
@@ -167,6 +178,12 @@ If the CORDEX modeling groups have sufficient resources, additional complementar
 It is up to the regional CORDEX communities to define a set of additional scenario simulations depending on resources and scientific questions.
 It is strongly recommended that individual CORDEX RCM groups should coordinate their simulations with [CORDEX POCs](https://cordex.org/about/points-of-contact/) for respective domains in order to avoid uncoordinated efforts leading to sparse and unbalanced RCM-GCM matrices.
 
+!!! info "CORDEX-CORE"
+    The CORDEX-CORE priority scenario is the High to Low emissions (HL) overshoot trajectory.
+    CORDEX-CORE simulations must cover, as a minimum, the 20-year periods: GWL0 (1866-1885), HIST (2002-2021), GWL2B, GWL2A.
+    The last two periods are dependent on the driving model, as they correspond to Global Warming Level +2K before (GWL2B) and after (GWL2A) the overshoot with respect to the pre-industrial reference period (1850-1900).
+    Of course, longer transient simulation periods are allowed as long as they cover the above minimal periods.
+
 ### GHG forcing
 
 RCM groups should use the same scenario GHG forcing as in the driving CMIP7 models.
@@ -207,6 +224,14 @@ It is up to the regional CORDEX communities to decide which CMIP7 models should 
 i) the ability of the CMIP7 models to simulate important aspects of regional and global climate, and
 ii) a range of plausible future climates simulated (e.g. regional temperature and precipitation responses) by the CMIP7 models with availability of forcing data.
 It is also up to the regional CORDEX communities to decide on a minimum number of simulations and the design of RCM-GCM matrices for a specific domain, depending on resources available.
+
+!!! info "CORDEX-CORE"
+    Models participating in CORDEX-CORE should downscale the CMIP7 GCMs:
+    <ul>
+    <li>X</li>
+    <li>Y</li>
+    <li>Z</li>
+    </ul>
 
 ## 9. Output variables
 
